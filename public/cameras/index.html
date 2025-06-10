@@ -1,0 +1,268 @@
+<!DOCtype: html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of cyberdemon</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type:="text/css" media="all">
+    <link href="/cameras/cameras.css" rel="stylesheet" type:="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <script src="/scripts/wobble.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $("[title]").style_my_tooltips({
+                    tip_follows_cursor: true,
+                    tip_delay_time: 100,
+                    tip_fade_speed: 300,
+                    attribute: "title"
+                });
+            });
+        })(jQuery); 
+    </script>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="titleFront">
+            <p>my cameras</p>
+        </div>
+        <div id="flex">
+            <nav>
+            <div id="flexChild"> <!--nav-->
+                <div class="window violet glass active mobileHidden" style="width:100%; background-color: #69a0ff;">
+
+                    <div class="title-bar">
+                        <div class="title-bar-text">NAVIGATE</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="window-body">
+                        <ul role="menubar">
+                            <li role="menuitem"><a style="color:black;" href="/siteIndex">Sitemap</a></li>
+                        </ul>
+                        <ul style="text-align: left; border:none; border-top: 1px solid #878a8a;"
+                            class="tree-view has-collapse-button has-connector has-container">
+                            <a href="/home" onmouseover="mouseoversound.playclip()"
+                                onclick="clicksound.playclip()">return home</a>
+                            <details>
+                                <summary>View more</summary>
+                                <ul>
+                                    <li><a href="/media" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">media</a></li>
+                                    <li>
+                                        <a href="/cameras" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">cameras</a>
+                                        <ul>
+                                            <a href="/cameras/gallery/" onmouseover="mouseoversound.playclip()"
+                                                onclick="clicksound.playclip()">gallery</a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/love" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">lovepage</a></li>
+                                    <li><a href="/resources" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">resources</a></li>
+                                    <li><a href="/blog" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">blog</a></li>
+                                    <li><a href="/layouts" onmouseover="mouseoversound.playclip()"
+                                            onclick="clicksound.playclip()">layouts</a></li>
+                                </ul>
+                            </details>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end nav-->
+        </nav>
+
+            <div id="flexChild">
+                <div id="flex" class="mainBox">
+                    <div class="flexChild child-equal"><!--start left-->
+                        <h3>the collection</h3>
+                        <div id="cameras">
+                            <div id="camerasBox">
+                                <div class="entry">
+                                    <img src="/cameras/media/trimlite.png">
+                                    <p class="name">Trimlite Instamatic 18</p>
+                                    <p>
+                                        <span>make:</span> kodak <br>
+                                        <span>year:</span> 1975 <br>
+                                        <span>flim:</span> 110
+                                    </p>
+                                </div>
+
+                                <div class="entry">
+                                    <img src="/cameras/media/cx.png">
+                                    <p class="name">Easyshare CX7430</p>
+                                    <p>
+                                        <span>make:</span> kodak <br>
+                                        <span>year:</span> 2004<br>
+                                        <span>flim:</span> digital
+                                    </p>
+                                </div>
+
+                                <div class="entry">
+                                    <img src="/cameras/media/everflash.png">
+                                    <p class="name"> Everflash 20</p>
+                                    <p>
+                                        <span>make:</span> keystone<br>
+                                        <span>year:</span> 1978<br>
+                                        <span>flim:</span> 126
+                                    </p>
+                                </div>
+
+                                <div class="entry">
+                                    <img src="/cameras/media/onestep.png">
+                                    <p class="name">TimeZero OneStep</p>
+                                    <p>
+                                        <span>make:</span> polaroid<br>
+                                        <span>year:</span> 1981<br>
+                                        <span>flim:</span> 600
+                                    </p>
+                                </div>
+
+                                <div class="entry">
+                                    <img src="/cameras/media/elph.png">
+                                    <p class="name"> Elph Z3</p>
+                                    <p>
+                                        <span>make:</span> canon<br>
+                                        <span>year:</span> 2002<br>
+                                        <span>flim:</span> APS
+                                    </p>
+                                </div>
+
+                                <div class="entry">
+                                    <img src="/cameras/media/lomography.png">
+                                    <p class="name"> Simple Use</p>
+                                    <p>
+                                        <span>make:</span> lomography<br>
+                                        <span>year:</span> 2002<br>
+                                        <span>flim:</span> 35mm<br><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--end left-->
+
+                    <div class="flexChild child-small"> <!--start center-->
+                        <div class="window violet glass active"
+                            style="width:100%; float:left; background-color: #69a0ff; z-index:2; margin-bottom: 20px;">
+
+                            <div class="title-bar">
+                                <div class="title-bar-text">WELCOME</div>
+                                <div class="title-bar-controls">
+                                    <button aria-label="Minimize"></button>
+                                    <button aria-label="Maximize"></button>
+                                    <button aria-label="Close"></button>
+                                </div>
+                            </div>
+
+                            <div class="window-body welcome">
+                                <p>
+                                    welcome to my small camera collection!! i am an avid lover of analogue film
+                                    and cool looking old point and shoot cameras
+                                    <img class="pixel" src="https://graphic.neocities.org/tumblr_ln1t8epBMD1qg9aa7.png"> dont forget to check out my <a href="./gallery">gallery!</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div id="links">
+                            <div class="resourcesBox child-equal">
+                                <h4>resources</h4>
+                                <div id="resources">
+                                    <p id="resourceTitle">shop</p>
+                                    <div style="margin-bottom:10px;" id="shop">
+                                        <p><a href="https://www.amazon.com/Leader-Retriever-PICKER-Cassettes-Extractor/dp/B00DN1080U/"
+                                                target="_blank"> 35mm film leader</a></p>
+                                        <p><a href="https://shop.lomography.com/us/film/35-mm-film/" target="_blank">
+                                                35mm film</a></p>
+                                        <p><a href="https://www.amazon.com/Kodak-Ultramax-Color-Print-135-36/dp/B004R4N2B4/"
+                                                target="_blank"> 35mm film (cheaper, bulk)</a></p>
+                                        <p><a href="https://shop.lomography.com/us/film/110-film/" target="_blank"> 110
+                                                film</a></p>
+                                        <p><a href="https://www.amazon.com/Kodak-Advantix-Speed-Exposure-APS/dp/B00004SPA3/"
+                                                target="_blank"> aps film</a></p>
+                                        <p><a href="https://www.ebay.com/sch/167943/i.html?_from=R40&_nkw=126+film+cartridge/"
+                                                target="_blank"> expired 126 film</a></p>
+                                        <p><a href="https://www.amazon.com/Kastar-Battery-Charger-Olympus-EasyShare/dp/B01LB3V0TO/"
+                                                target="_blank"> kastar batteries + charger</a></p>
+                                    </div>
+                                    <p id="resourceTitle">links</p>
+                                    <div id="shop">
+                                        <p><a href="https://thedarkroom.com/film-index/" target="_blank">
+                                                thedarkroom</a> film info</p>
+                                        <p><a href="http://camera-wiki.org/wiki/Main_Page/" target="_blank"> camera
+                                                wiki</a> every camera ever</p>
+                                        <p><a href="https://www.lomography.com/school" target="_blank"> lomography school
+                                            </a>guides and resources</p>
+                        
+                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="vidBox child-equal">
+                                <h4>camera vids</h4>
+                                <iframe id="vidPlayer" width="166" height="93"
+                                    src="https://www.youtube.com/embed/AEm-2giH_zw?si=JtIENvklFtGPa76P"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                                <div id="vidNav">
+                                    <button onclick="myFunction1()"> Flash photography used to be pretty wild -
+                                        Technology Connections</button><br>
+                                    <button onclick="myFunction2()"> Shoot 35mm Film in 126 Instamatic Camera -
+                                        FilmPhotographyProject</button><br>
+                                    <button onclick="myFunction3()"> How Kodak invented the “snapshot” -
+                                        Vox</button><br>
+                        
+                                </div>
+                        
+                                <script>
+                                    function myFunction1() {
+                                        document.getElementById("vidPlayer").src = "https://www.youtube.com/embed/AEm-2giH_zw?si=JtIENvklFtGPa76P";
+                                    }
+                        
+                                    function myFunction2() {
+                                        document.getElementById("vidPlayer").src = "https://www.youtube.com/embed/IS8s8bEa61o?si=wBo0-wYrkKnhZcOC";
+                                    }
+                        
+                                    function myFunction3() {
+                                        document.getElementById("vidPlayer").src = "https://www.youtube.com/embed/k-a0EFhr3vE?si=lqMq1sP7HEoy3WwH";
+                                    }
+                                </script>
+                        
+                        
+                            </div>
+                        </div>
+
+                        
+
+                    </div><!--end right-->
+                    <a data-toggle="tooltip" title="click to view my photo gallery" href="/cameras/gallery/"><img id="gallery"
+                        src="/images/graphics/boardC.png"></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+
+body{
+  background-color: white;
+  overflow:hidden;
+}
+
+#main{
+  border:1px solid black;
+border-radius: 10px;
+background-image: url(images/bg/field5.png);
+background-size: cover;
+background-position: bottom;
+padding:20px;
+}
+
+#mainBox{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width:740px;
+  padding:20px;
+  border-width:7px;
+    border-style:solid;
+    border-image: url("/border.png") 7 fill round;
+}
+
+#shelf{
+  background-color: #94ceee;
+  border:5px solid #06c;
+  
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #fff;
+  color: #06c;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+  font-size:17px;
+  font-family:basiic;
+  filter: drop-shadow(-1px 0px 0 black) drop-shadow(0px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#guy img{
+  height:170px;
+    transition-duration:0.4s;
+-webkit-transition-duration:0.4s;
+-o-transition-duration:0.4s;
+  margin:5px;
+  margin-bottom:-5px;
+}
+
+#guy img:hover{
+transform: translate(0px, -10px);
+  transition-duration:0.4s;
+-webkit-transition-duration:0.4s;
+-o-transition-duration:0.4s;
+}
+
+#guy{
+  width: 100%;
+  padding:0px 20px;
+white-space: nowrap;
+overflow-x: auto;
+box-sizing: border-box;
+overflow-y: hidden;
+  padding-top:60px;
+  margin-bottom:-35px;
+    border-bottom:5px solid #06c;
+
+}
+
+#dog{
+  float:left;
+  position:absolute;
+  margin-left:-555px;
+  margin-top:-220px;
+  height:250px;
+}
+
+#bookTitle{
+   font-family: GrapeSoda;
+   color:white;
+   width:390px;
+   font-size:80px;
+   padding-top:10px;
+   text-align:left;
+   background-image: url('/images/graphics/nintend.png');
+   background-position: right center;
+   background-size: contain;background-repeat: no-repeat;  
+   margin-top: -45px;
+}
+
+#bookTitle p{
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+
+}
+
+#tip{
+  right:-15px;
+  margin-top: -35px;
+  width: 230px;
+  position: absolute;
+}
+
+#tip img{
+  width: 250px;
+  height:auto;
+  top:-160px;
+  left:120px;
+  position: absolute; 
+  transform: scaleX(-1);
+}
+

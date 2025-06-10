@@ -1,0 +1,193 @@
+
+
+
+
+h3{
+   
+    margin-top: -10px;
+    margin-bottom:5px; 
+  }
+ 
+h4{
+    color:white; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0; 
+    margin: 0px;
+    z-index:3; 
+    position: relative; 
+    font-size:25px!important;
+    z-index:10;
+    text-align: center;
+
+}  
+  .child-small {
+    flex: 0.9;
+  }
+
+
+#main{
+    width:70%;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+#titleFront{
+   background-image: url('/images/graphics/nintend.png');
+   width:450px;
+
+
+}  
+
+
+
+.welcome img{
+    height:20px;
+    margin:-5px 0px;
+}
+
+.welcome{
+    font-size: 17px;
+    font-family: basiic;
+    padding:10px;
+}
+
+
+#cameras{
+    overflow: auto; 
+    height: 490px; 
+    margin-top: -23px;
+    border:1px solid black;
+    padding:20px;
+    border-radius: 10px;
+    background-image: url(/images/bg/dithered-image.png);
+    background-size: cover;
+}
+
+#camerasBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    background-color: white; 
+    width: calc(100% - 25px);
+    border: 1px solid black;
+    border-radius: 5px;
+    
+
+}
+
+.entry{
+    padding:20px 9px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: basiic;
+    margin-bottom: 15px;
+    flex:.5;
+    box-sizing: border-box;
+
+}
+
+.entry span{
+    font-family:basiic;
+    font-size: 20px;
+}
+
+.entry img{
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(5px 0 0 #3399ff) 
+    drop-shadow(0 5px 0 #3399ff)
+    drop-shadow(-5px 0 0 #3399ff) 
+    drop-shadow(0 -5px 0 #3399ff);
+    z-index: 1;
+
+}
+
+.name{
+    text-decoration: underline;
+    text-decoration-color: #3399ff;
+    margin-bottom: 10px;
+    font-size:22px;
+}
+
+#links{
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    gap: 10px;
+}
+
+
+
+#vidNav{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:5px;
+    margin-top: 10px;
+}
+
+#vidNav button:not(:last-child){
+    margin-bottom: 10px;
+}
+
+#resources{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    background-image: url('/images/bg/bg22.png');
+    background-repeat: repeat;   
+    background-size:80%
+
+}
+
+#shop{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow:auto;
+    height:120px;
+    text-align:left;
+    padding:5px 10px;
+    font-size:13px;
+    background-color: white;
+    z-index:2;
+    position: relative;
+
+}
+#shop a{
+    font-family: basiic;
+}
+
+#shop p{
+    margin-bottom:7px;
+}
+
+#resourceTitle{
+    margin: auto;
+    z-index:5;
+    margin-bottom:-1px;
+    background-color: white;
+    border:1px solid black;
+    border-radius:5px 5px 0px 0px;
+    border-bottom: none;
+    width:50px;
+    padding:5px;
+    padding-bottom:0px;
+    position: relative;
+    font-size: 20px;
+
+}
+
+#gallery{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: 200px;
+    height: auto;
+    transition-duration:0.4s;
+}
+
+#gallery:hover{
+    transform: rotate(-5deg);
+    transition-duration:0.4s;
+}

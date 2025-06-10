@@ -1,0 +1,157 @@
+#titleFront{
+  
+  background-image: url('/images/graphics/play.webp');
+}  
+
+#head{
+  margin-left: 10px;
+  margin-top: 0px;
+  font-size:40px;
+  text-align: left;
+  color: white;
+  font-family:hearts;
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+  z-index:10;
+  position: absolute;
+}
+
+.mainBox{
+  width: 60vw;
+}
+
+.collie {
+  margin-left: -90px;
+  margin-top: 20px;
+  z-index: 10;
+  position: relative;
+  width: 120%;
+}
+
+.mew img{
+  width:100%;
+    height:auto;
+    border:1px solid rgb(154, 154, 154);
+    margin-bottom:10px;
+    }
+
+#cont {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 10px; 
+  margin-bottom:0px;
+} 
+
+#column {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:0px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+#about{
+  border:1px solid black;
+  border-radius: 5px;
+    background-color:white;
+    font-family:basiic;
+    font-size:17px;
+    height: fit-content;
+    height:calc(100% - 6px);
+    padding:0px 5px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+  }
+  
+  #about img{
+    height: 17px;
+    
+  }
+
+#pin{
+  padding:20px;
+  margin-top:-5px;
+  padding-bottom:15px;
+  background: url(/images/bg/092c5e09acb80658b15aeb2e7572f8de.jpg);
+  background-size: 40%;
+  border:1px solid black;
+  border-radius: 10px;  
+
+}
+
+[role="tabpanel"] {
+height:190px;
+overflow:auto;
+}
+
+
+#q{
+  border:1px solid black;
+  background-color:white;
+  padding:10px;
+  height:100px;
+  overflow:auto;
+  text-align:left;
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+.profile{
+  flex-wrap: wrap-reverse;
+  row-gap: 10px!important;
+
+}
+
+.child-meh{
+  flex: 0.8;
+}
+
+#q mark{
+  color:white;
+    background-color: #3399ff;
+}
+
+
+#box{
+  border:1px solid black;
+  background-color:white;
+  padding:10px;
+  overflow:auto;
+  height:300px;
+  margin-bottom:-10px;
+}
+
+#horizontal{
+width: 17vw;
+overflow-x: auto;
+white-space: nowrap;
+padding: .5em;
+box-sizing: border-box;
+border:1px solid black;
+  background-color:white;
+  height: 244px;
+overflow-y: hidden;
+border-radius: 5px;  
+}  
+
+#horizontal img{
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 800px) {
+
+  .mainBox{
+    position: relative;
+  }
+  .collie {
+   right:-18vw;
+   bottom:-8vw;
+    z-index: 10;
+    position: absolute;
+    width: 30vw;
+  }
+  
+
+}

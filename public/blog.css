@@ -1,0 +1,457 @@
+#flex{
+  justify-content: space-evenly;
+
+}
+
+
+span{
+  font-family: 'Notepen';
+}
+
+
+.mainBox{
+  margin-top: -50px!important;
+}
+
+#titleFront{
+  width:17vw;
+  background-image: url('/images/graphics/NintendogAssist.webp');
+
+}
+
+.noteEntries{
+  flex:.6;
+}
+
+
+::-webkit-scrollbar {
+  width: 0; /* remove scrollbar space */
+  background: transparent; /* to make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+#main {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 800px;
+}
+
+
+#title {
+  font-size: 65px;
+  font-family: GrapeSoda;
+  color: #fff;
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+  margin-left: 45px;
+}
+
+/*months*/
+.accordion {
+  cursor: pointer;
+  display: block;
+  font-family: basiic;
+  font-size: 25px;
+  padding: 5px 20px;
+  transition: 0.4s;
+  border-radius: 0px;
+  text-shadow: 2px 2px 0px #FFFFFF;
+  background-image: url(/images/bg/pictoButton.png);
+  background-repeat: repeat-x;
+  margin: auto;
+  margin-top: 10px;
+}
+
+button.accordion{
+  border:1px solid black!important;
+  box-shadow:none;
+  animation: none!important;
+  width: 160px;
+  text-align: left;
+  
+}
+
+button.accordion.active::after{
+border-radius: 0px;  
+box-shadow:none;
+text-shadow: 2px 2px 0px #A2A2A2;
+  
+}
+button.accordion.active{
+  border-radius: 0px;  
+  text-shadow: 2px 2px 0px #A2A2A2;
+  box-shadow:none;
+
+  }
+
+ button.accordion::before{
+  text-shadow: 2px 2px 0px #A2A2A2;
+  border-radius: 0px;
+  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  box-shadow:none;
+
+}
+
+button.accordion::after{
+  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  text-shadow: 2px 2px 0px #A2A2A2;
+  border-radius: 0px;
+  box-shadow:none;
+
+}
+
+button.accordion:focus{
+  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  text-shadow: 2px 2px 0px #A2A2A2;
+  border-radius: 0px;
+
+}
+
+button.accordion:not(:disabled):hover{
+  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  text-shadow: 2px 2px 0px #A2A2A2;
+  border-radius: 0px; 
+  box-shadow:none;
+
+}
+
+button.accordion:hover{
+  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  text-shadow: 2px 2px 0px #A2A2A2;
+  border-radius: 0px;
+  box-shadow:none;
+}
+
+#months {
+  background-image: url(/images/bg/bottom_screen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+    height:350px; 
+}
+
+#months2 {
+  background-image: url(/images/bg/drawui-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%;  
+height:350px; 
+pointer-events: none;
+ z-index: 2;
+
+}
+
+#monthsScroll{
+  overflow: auto;
+  height:290px;
+  padding:20px 0px;
+  padding-top:23px;
+  padding-left: 10px;
+}
+
+
+/*dates*/
+.panel{
+  margin-bottom: 15px;
+}
+
+button.tablinks{
+  cursor: pointer;
+  font-family: basiic;
+  font-size:15px;
+  text-align: end;
+  border:none!important;
+  border-radius: 0px;
+  background-image: url(/images/bg/dateBG.png)!important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5px;
+  padding-bottom: 3px;
+  box-shadow:none;
+  width: 75px;
+  margin-top:5px;
+}
+
+button.tablinks.active::after{
+  border-radius: 0px;  
+  box-shadow:none;
+  background-image: url(/images/bg/dateBgHover.png)!important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    
+  }
+  button.tablinks.active{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    }
+  
+   button.tablinks::before{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+  }
+  
+  button.tablinks::after{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  button.tablinks:focus{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  button.tablinks:not(:disabled):hover{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  button.tablinks:hover{
+    border-radius: 0px;  
+    box-shadow:none;
+    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+/*end dates*/
+#year{
+  background-image: url(/images/bg/choose.png);
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  font-family:basiic;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0;
+  font-size: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+.panel {
+  display: none;
+  overflow: hidden;
+
+}
+
+#note {
+  background-image: url(/images/bg/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+    height:350px;
+    overflow: auto;
+  padding-left: 50px;
+  margin-bottom: -8px;
+  padding-right: 10px;
+
+}
+
+#pictoChat{
+border: 1px solid rgb(0, 0, 0);
+}
+
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.dsGuy{
+  position: absolute;
+right:-140px;
+bottom:15px;
+}
+
+
+@keyframes fadeEffect {
+  from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*picto box*/
+
+/*----- variables -----*/
+
+:root {
+
+  /*-- sizing stuff --*/
+  --p: 1.1; /* pixel multiplier. needs to be a unitless integer. */
+  --p2: 1.3; /* pixel multiplier. needs to be a unitless integer. */
+
+  --pixel: calc(var(--p) * 1px); /* don't change this */
+  --pixel2: calc(var(--p2) * 1px); /* don't change this */
+  --s: calc(var(--pixel2) * 3); /* size of the cut. you can change the number on the right of the asterisk for a deeper or shallower cut */
+
+  /*-- colors --*/
+  --box-text: black;
+  --box-background: white;
+  --box-border:rgba(127,178,16,255);
+
+  /* "date" refers to the upper left hand section, where the username would be in the original pictochat. */
+  --date-text: var(--box-border);
+  --date-background: rgb(127,178,16, 0.3);
+}
+
+/*----- fonts -----*/
+
+@font-face {
+  font-family:"NDS BIOS";
+  src:  url("https://files.catbox.moe/ipi8ww.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+}
+
+/*----- styling for each box -----*/
+
+.box {
+  box-sizing: border-box;
+  font-family: "NDS BIOS", Arial, sans-serif;
+  font-size: calc(var(--pixel2) * 16);
+  position:relative;
+  margin: calc(var(--pixel) * 16) 0;
+  background-color:var(--box-background);
+  color: var(--box-text);
+  clip-path: polygon(
+      var(--s) 0%, 
+      calc(100% - var(--s)) 0%, 
+      100% var(--s), 100% calc(100% - var(--s)), 
+      calc(100% - var(--s)) 100%, 
+      var(--s) 100%, 
+      0% calc(100% - var(--s)), 
+      0% var(--s));
+}
+
+.box:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index: -1;
+  background: linear-gradient(45deg,var(--box-border),var(--box-border));
+  --g1:#000 var(--pixel2),#0000 0 calc(100% - var(--pixel2)),#000 0;
+  --g2:#0000   calc(0.707*var(--s)), 
+        #000  0 calc(0.707*var(--s) + var(--pixel2)),
+        #0000 0 calc(100% - 0.707*var(--s) - var(--pixel2)),
+        #000  0 calc(100% - 0.707*var(--s)),
+        #0000 0;
+  -webkit-mask:
+    linear-gradient(45deg ,var(--g2)),
+    linear-gradient(-45deg,var(--g2)),
+    linear-gradient(90deg ,var(--g1)) 50%/100% calc(100% - 2*var(--s)) no-repeat,
+    linear-gradient(180deg,var(--g1)) 50%/calc(100% - 2*var(--s)) 100% no-repeat;
+    mask:
+      linear-gradient(45deg ,var(--g2)),
+      linear-gradient(-45deg,var(--g2)),
+      linear-gradient(90deg ,var(--g1)) 50%/100% calc(100% - 2*var(--s)) no-repeat,
+      linear-gradient(180deg,var(--g1)) 50%/calc(100% - 2*var(--s)) 100% no-repeat;
+}
+
+/*----- date/username/text in the upper left styling -----*/
+
+.date {
+  float: left;
+  position: relative;
+  z-index: -2;
+  padding: calc(var(--pixel2) * 0) calc(var(--pixel2) * 4);
+  color: var(--date-text);
+  background: var(--date-background);
+  clip-path: polygon(var(--s) 0, 100% 0, 100% calc(100% - var(--s)), calc(100% - var(--s)) 100%, 0 100%, 0 var(--s));
+  margin-right: calc(var(--pixel2) * 3);
+  line-height: calc(var(--pixel2) * 18);
+  margin-top: calc(var(--pixel2) * -1);
+  box-sizing: border-box;
+}
+
+.date:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(45deg,var(--box-border),var(--box-border));
+  --g3:#0000 0 calc(100% - var(--pixel2)),#000 0;
+  --g4:#0000   calc(0.707*var(--s)), 
+        #000  0 calc(0.707*var(--s) + var(--pixel2)),
+        #0000 0 calc(100% - 0.707*var(--s) - var(--pixel2)),
+        #0000 0;
+  -webkit-mask:
+    linear-gradient(-45deg,var(--g4)),
+    linear-gradient(90deg ,var(--g3)) 100% calc(100% - var(--s)) no-repeat,
+    linear-gradient(180deg,var(--g3)) calc(100% - var(--s)) 100% no-repeat;
+    mask:
+      linear-gradient(-45deg,var(--g4)),
+      linear-gradient(90deg ,var(--g3)) 100% calc(100% - var(--s)) no-repeat,
+      linear-gradient(180deg,var(--g3)) calc(100% - var(--s)) 100% no-repeat;
+}
+
+/*----- styling for the message inside the box -----*/
+
+.message {
+  padding: calc(var(--pixel2) * 0) calc(var(--pixel2) * 4) calc(var(--pixel2) * 0) calc(var(--pixel2) * 4);
+  line-height: calc(var(--pixel2) * 18);
+  font-family: basiic;
+  text-align: left;
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+
+  .mainBox{
+    margin-top: -20px!important;
+  }
+  
+  #main{
+    width: 80%;
+    margin: auto;
+
+  }
+
+  #months {
+      height:57vw; 
+  }
+
+  #months2 {
+    height:57vw; 
+}
+
+
+  #note {
+    height:57vw; 
+  }
+
+  #monthsScroll{
+    
+    height:36vw;
+    padding:20px 0px;
+    padding-top:23px;
+    padding-left: 10px;
+  }
+
+
+  
+}
+
+
+

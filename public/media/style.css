@@ -1,0 +1,94 @@
+
+    @font-face { 
+        src: url(https://cinni.net/fonts/basiic.ttf); 
+        font-family: basiic; 
+      }
+
+    @font-face { 
+      src: url(/fonts/GrapeSoda.ttf); 
+      font-family: GrapeSoda; 
+    }
+
+    @font-face { 
+      src: url(/fonts/CyberpunkWaifus\ \(1\).ttf); 
+      font-family: Notepen; 
+    }
+  
+      ::selection {
+      color:white;
+        background-color:  #3399ff;
+    } 
+    ::-moz-selection {
+      color:white;
+        background-color:  #3399ff;;
+    }
+     
+     mark{
+    background-color: #3399ff;
+    color: #fff;
+    }  
+    
+    body {
+      background-color: white;
+      color: black;
+      font-family: basiic;
+      font-size:25px;
+    }
+    
+    p{
+      margin:0px}
+    
+      a {
+    transition: .4s;
+    text-decoration:none;
+      color:black; 
+    }
+
+    h3{
+      color:white; 
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0; 
+      margin: 0px;
+      margin-bottom:-15px; 
+      z-index:3; 
+      position: relative; 
+      font-size:30px!important;
+      z-index:10;
+      text-align: center;
+    }
+
+    #titleFront{
+      margin-left:50px;
+      font-family: GrapeSoda;
+      color:white;
+      width:370px;
+      font-size:80px;
+      padding-top:10px;
+      text-align:left;
+      background-position: right center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }  
+    
+    #titleFront p{
+      filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+    }
+
+   
+    #cont {
+      display: grid;
+      grid-template-columns: 48% 50%;
+      grid-gap: 10px; 
+      margin-bottom: 10px;
+      } 
+      
+      #column {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding:0px;
+        text-align:center;
+       
+      }
+
+  
+    

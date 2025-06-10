@@ -1,0 +1,90 @@
+
+
+body {
+background:LavenderBlush;
+font-size: 20px;
+text-align: center;
+background-image: url(images/bg/clouds.png);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+#mainBox{
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.window-body{
+  background:LavenderBlush;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  height:400px; 
+  font-family:comic sans ms;
+  font-size: 15px;
+
+}
+
+#babybox{
+width:500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+}
+
+td{
+  font-family:comic sans ms;
+  background:LavenderBlush;
+  font-size: 15px;
+
+}
+
+td img{
+  float: left;
+}
+
+table{
+  background:LavenderBlush;
+
+}
+
+#bleh img{
+  height:50px;
+}
+
+::-webkit-scrollbar {
+width: 16px;
+height: 10px;
+}
+::-webkit-scrollbar-thumb {
+background-color: #fff;
+background-image: url(https://i.imgur.com/Qtm9Z60.png);
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+}
+::-webkit-scrollbar-track {
+background-color: #fff;
+background-image: url(https://i.imgur.com/IGXGYKz.png);
+}
+::-webkit-scrollbar-button:vertical:increment {
+background-image: url(https://i.imgur.com/WhC8iy3.png);
+width: 14px;
+height: 16px;
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+background-image: url(https://i.imgur.com/fQ18mrR.png);
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+width: 14px;
+height: 16px;
+}

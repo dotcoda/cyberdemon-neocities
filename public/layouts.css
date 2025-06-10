@@ -1,0 +1,41 @@
+
+
+
+#titleFront{
+
+   background-image: url('images/graphics/cat.png');
+   width: 300px;
+}  
+
+
+img{
+  width: 100%;
+  height: auto;
+  border:1px solid black;
+ transition: transform .5s; 
+ border-radius: 5px;
+}
+
+img:hover{
+  transform: scale(.9); 
+  border-radius: 0px;
+  
+}
+
+
+#home {
+  z-index: 99;
+  padding:5px 10px;
+  cursor: pointer;
+  font-size:20px;
+  color:black;
+  margin-top:15px;
+}
+
+h5{
+  margin: auto;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+

@@ -1,0 +1,38 @@
+#main{
+    width:50vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    }
+    
+    .mainBox{
+    padding-top: 0px;
+    margin-bottom: 10px;
+
+  }
+
+
+button{
+    font-size: 17px !important;
+    padding: 3px 13px!important;
+    margin-top: 10px;
+}
+
+
+.mainBox span{
+    font-size:60px;
+     font-family:GrapeSoda; 
+    font-weight: 900; 
+    color:#fff; 
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+}
+
+@media (max-width: 800px) {
+    #main{
+      width: 80vw;
+      margin: auto;
+    }
+}

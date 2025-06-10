@@ -1,0 +1,255 @@
+
+   @font-face {
+    src: url(/fonts/JMH%20Typewriter.ttf);
+    font-family: typewriter;
+    } /* normal font */
+    
+    
+    @font-face {
+    font-family: moms;
+    src: url(/fonts/Mom.ttf); /* header font */
+    }
+    
+    
+    @font-face {
+    src: url(/fonts/JMH%20Typewriter-Black.ttf);
+    font-family: dads; /* bold font */
+    }
+
+    @font-face {
+      src: url(/fonts/bulkeyRefuse.ttf);
+      font-family: a; /* bold font */
+      }
+    
+
+    @font-face {
+      src: url(/fonts/Oceanside%20Typewriter.ttf);
+      font-family: b; /* bold font */
+      }
+      @font-face {
+        src: url(/fonts/STAMPWRITER-KIT.ttf);
+        font-family: c; /* bold font */
+        }
+      
+    
+    body {
+      background-color: #dbd7c7;
+      background-repeat: repeat;   
+      ;
+      color: black;
+      font-family: typewriter;
+      font-size:25px;
+    }
+    
+    p{
+      margin:0px}
+    
+      a {
+    transition: .4s;
+    text-decoration:none;
+      color:black;
+    
+    }
+
+    #cont {
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-gap: 10px; 
+      margin-bottom: 10px;
+      } 
+      
+      #column {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding:0px;
+        text-align:center;
+        position: relative;
+      }
+
+      #name{
+        font-family: dads;
+        text-align: left;
+        line-height: .8;
+        margin-bottom: 10px;
+      }
+
+      #name span{
+        font-family: typewriter;
+        font-size: 15px;
+        font-style: italic;
+
+      }
+    
+      #album{
+        border-width:7px;
+        border-style:solid;
+        border-image: url("/border.png") 7 fill round;
+        padding:10px;
+        display: flex;
+        font-family: typewriter;
+        font-size:25px;
+        flex-wrap: wrap-reverse;
+        margin-top: 15px;
+  
+      }
+
+      #album p{
+        font-family:dads ;
+      }
+
+      #album img{
+        width:100%;
+        height:auto;
+        filter: sepia(10%);
+      }
+
+      #info{
+        width:45%
+      }
+
+      #info p{
+        font-size: 12px;
+        text-align: left;
+        font-family: typewriter;
+      }
+
+
+      #tracks{
+        border:1px solid #7f725d;
+        width:46%;
+        overflow: auto;
+        margin-left:15px;
+        text-align: left;
+        font-size: 15px;
+        height:220px;
+        padding: 5px;
+      }
+
+
+#main{
+    margin: 30px auto;
+    width:950px;
+    padding:20px;
+    background-image: url(https://i.pinimg.com/474x/9f/c1/77/9fc177c3303f134876ca796998ec6e8d.jpg);
+    box-shadow: inset 0 0 10px 10px #dbd7c7;
+  }
+
+
+#border{
+  border: 35px solid transparent;
+  border-image: url(https://i.pinimg.com/originals/ab/a0/9c/aba09cf98ca6211e8dbcd3bc5c8879e3.png) 100 round;
+}
+#mainBox{
+    padding:10px;
+    font-family: typewriter;
+    font-size:30px;
+    text-align: center;
+    margin:-16px;
+    border:1px solid #bdb4a8;
+    background-color: white;
+    display: flex-reverse;
+
+}
+
+#title{
+    margin-left:5px;
+   font-family: moms;
+   color:black;
+   width:700px;
+   font-size:50px;
+   text-align:left;
+   text-shadow: 2px 2px 0 #bdb4a8, -2px 2px 0 #bdb4a8, -2px -2px 0 #bdb4a8, 2px -2px 0 #bdb4a8;
+   animation-name: example;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   height: 50px;
+   padding:5px 0px;
+ }
+ 
+ @keyframes example {
+   25%  {font-family: b;}
+   50%  {font-family:a;}
+   75%  {font-family: c;}
+   100% {font-family:moms;}
+ }
+
+ #resources{
+  border: 1px solid black;
+  width: 100px;
+ }
+
+ .box11 {
+  margin:1em 0; /* 中央寄せは0をautoに変更 */
+  width:80%;
+  font-size:15px;
+  font-family: dads;
+  filter: grayscale(50%);
+  }
+  .u01 {
+  background:url(/media/notecard/f-ue.gif) repeat-x;
+  height:45px;
+  margin:0 50px
+  }
+  .s01 {
+  background:url(/media/notecard/f-sita.gif) repeat-x;
+  height:13px;
+  margin:0 50px
+  }
+  .t01 {
+  background:url(/media/notecard/f-tunagi-naka.gif) repeat-x;
+  height:48px;
+  margin:0 50px
+  }
+  .box-top {
+  background-image:url(/media/notecard/f-kado1.gif), url(/media/notecard/f-kado2.gif);
+  background-position:top left, top right;
+  background-repeat:no-repeat, no-repeat;
+  height:45px
+  }
+  .box-center {
+  background-image:url(/media/notecard/f-migi.gif), url(/media/notecard/f-hidari.gif) , url(/media/notecard/f-naka.gif);
+  background-position:top right, top left, top center;
+  background-repeat:repeat-y, repeat-y ,repeat;
+  padding:0 20px
+  }
+  .box-bottom {
+  background-image:url(/media/notecard/f-kado3.gif), url(/media/notecard/f-kado4.gif);
+  background-position:top left, top right;
+  background-repeat:no-repeat, no-repeat;
+  height:13px
+  }
+  .box-tunagi {
+  background-image:url(/media/notecard/f-tunagi-migi.gif), url(/media/notecard/f-tunagi-hidari.gif);
+  background-position:top right, top left;
+  background-repeat:repeat-y, repeat-y;
+  height:48px
+  }
+
+  #notecardBox{
+    font-family: typewriter;
+    text-align: left;
+  }
+
+  #notecardBox a{
+    color: #000;
+    text-decoration: none;
+  }
+
+  #notecardBox a:hover{
+    color: #7f725d;
+    animation-duration: .4s;
+  }
+
+  #notecardBox span{
+    font-style: italic;
+    text-decoration: line-through;
+  }
+
+  #dogs{
+    position: absolute;
+    width: 170px;
+    height: auto;
+    bottom:0;
+    left:0;
+  }
