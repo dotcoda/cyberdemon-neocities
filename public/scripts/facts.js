@@ -27,8 +27,8 @@ function createsoundbite(sound) {
   }
 }
 
-var mouseoversound = createsoundbite("audio/animal-jam-select.mp3");
-var clicksound = createsoundbite("audio/animal-jam-select2.mp3");
+var mouseoversound = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select.mp3");
+var clicksound = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select2.mp3");
 
 function myFunction() {
   clicksound.playclip();

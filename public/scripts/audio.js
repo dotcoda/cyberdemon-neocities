@@ -1,18 +1,18 @@
 const playlist = [
 	{
-		src: "/audio/retro tv.mp3",
+		src: "https://cyberdemon.nekoweb.org/audio/retro tv.mp3",
 		title: "Retro TV - Animal Crossing"
 	},
 	{
-		src: "/audio/The DOG Island OST - 2. Puroro Town (HQ).mp3",
+		src: "https://cyberdemon.nekoweb.org/audio/The DOG Island OST - 2. Puroro Town (HQ).mp3",
 		title: "The DOG Island OST - Puroro Town"
 	},
 	{
-		src: "/audio/Animal Crossing- Wild World - Title Screen .mp3",
+		src: "https://cyberdemon.nekoweb.org/audio/Animal Crossing- Wild World - Title Screen .mp3",
 		title: "Animal Crossing: Wild World - Title Screen"
 	},
 	{
-		src: "audio/Launcher - Wii Sports + Wii Sports Resort.mp3",
+		src: "https://cyberdemon.nekoweb.org/audio/Launcher - Wii Sports + Wii Sports Resort.mp3",
 		title: "Launcher - Wii Sports + Wii Sports Resort"
 	}
 ];

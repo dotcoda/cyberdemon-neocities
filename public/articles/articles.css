@@ -1,0 +1,138 @@
+#title{
+    margin:0;
+    margin-left:50px;
+    font-family: GrapeSoda;
+    color:white;
+    font-size:80px;
+    text-align:left;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+}
+
+h2{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#emptyMessage {
+    display: none;
+    font-style: italic;
+    color: #888;
+  }
+
+.entry {
+    border: 1px solid black;
+    padding:10px;
+    text-align: left;
+    display: none;
+  }
+
+  .entry:not(:last-of-type){
+    margin-bottom: 10px;
+  }
+
+  .entry p:last-of-type{
+    margin-top: 10px;
+  }
+
+   a{
+    color:#06c;
+  }
+
+  a:hover{
+    color:#39f;
+  }
+
+  .entry a::after{
+    font-family: DotGothic16;
+    font-size: .9rem;
+    content: '→'; 
+    margin-left: 0.25rem;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+  .entry a:hover::after{
+    transform: translateX(0.25rem); 
+  }
+
+  #back{
+    text-align: left;
+  }
+  #back a::before{
+    font-family: DotGothic16;
+    font-size: .9rem;
+    content: '←'; 
+    margin-right: 0.25rem;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #back a:hover::before{
+    transform: translateX(-0.25rem); 
+  }
+
+  .tags{
+    display: flex;
+    gap:5px;
+    color: #5c5c5c;
+  }
+
+  .tags::before{
+    content: '#';
+  }
+
+  .tags button{
+    border:none;
+    background: none;
+    text-align: left;
+    padding:0;
+    color: #5c5c5c;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: basiic;
+  }
+
+  .tags button:hover{
+    font-style: italic;
+    cursor: pointer;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  #filterMessage{
+    margin: 10px 0px;
+  }
+
+  #filterMessage span{
+    font-style: italic;
+    text-decoration: underline;
+
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-family: basiic;
+    font-size: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .tags .active {
+   color: #06c;
+  }

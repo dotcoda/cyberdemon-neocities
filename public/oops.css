@@ -1,0 +1,36 @@
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background:#008ee1;
+    color: #fefeff;
+}
+
+#main {
+    margin: auto;
+    position: absolute;
+    left: 60px;
+    top:30px;
+}
+
+a{
+    color:white;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 150px;
+    margin: 0;
+
+
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px 0px;
+
+}
+
+h3 {
+    font-weight: 100;
+
+}

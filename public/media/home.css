@@ -71,8 +71,8 @@ h5{
     }
 
     .entry p{
-      flex:1;
       text-align: left;
+        margin-right: 5px;
     }
 
     .entry div{

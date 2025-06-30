@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>articles</title>
+
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="articles.css" rel="stylesheet" type="text/css" media="all">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+    <script src="/scripts/click.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <h1 id="title">articles</h1>
+        <div class="mainBox">
+
+            <div id="back">
+                <a href="../home.html">back to site</a>
+            </div>
+
+            
+
+            <div id="filterMessage">Currently showing: All</div>
+            <button class="btn" onclick="filterSelection('all')">Show all</button>
+
+
+
+            <div class="container">
+                <div class="entry academic sources history enviornmentalism">
+                    <h2>Only Policy Can Prevent Forest Fires</h2>
+                    <p>added: 30 June 2025</p>
+                    <div class="tags">
+                        <button onclick="filterSelection('academic')">academic</button> 
+                        <button onclick="filterSelection('sources')">sources</button> 
+                        <button onclick="filterSelection('history')">history</button> 
+                        <button onclick="filterSelection('enviornmentalism')">enviornmentalism</button>
+                    </div>
+                    <p>An essay responding to the statement: In US history, forests have been separate from politics.
+                    </p>
+                    <a href="writings/Only Policy Can Prevent Forest Fires.html">read now</a>
+                </div>
+
+                <div class="entry academic sources history enviornmentalism">
+                    <h2>The American Dream is a Concrete Oasis Paved by Capital</h2>
+                    <p>added: 30 June 2025</p>
+                    <div class="tags">
+                        <button onclick="filterSelection('academic')">academic</button> 
+                        <button onclick="filterSelection('sources')">sources</button> 
+                        <button onclick="filterSelection('history')">history</button> 
+                        <button onclick="filterSelection('enviornmentalism')">enviornmentalism</button>                    </div>
+                    <p>An essay responding to the statement: The profit motive has shaped cities more than planning has
+                        in the last 150 years.</p>
+                    <a href="writings/The American Dream is a Concrete Oasis Paved by Capital.html">read now</a>
+                </div>
+
+
+                <div class="entry academic sources enviornmentalism socal-justice">
+                    <h2>Asteroids Ended the Dinosaurs; Now It's Humans Ending Everything Else </h2>
+                    <p>added: 30 June 2025</p>
+                    <div class="tags">
+                        <button onclick="filterSelection('academic')">academic</button> 
+                        <button onclick="filterSelection('sources')">sources</button> 
+                        <button onclick="filterSelection('enviornmentalism')">enviornmentalism</button> 
+                        <button onclick="filterSelection('socal-justice')">socal justice</button> 
+                      </div>
+                    <p>An article describing how humans have greatly altered biodiversity which may lead to a near
+                        future extinction event.</p>
+                    <a href="writings/Asteroids Ended the Dinosaurs; Now It's Humans Ending Everything Else.html">read now</a>
+                </div>
+
+
+            </div>
+           
+
+            <script src="filter.js"></script>
+
+
+
+        </div>
+
+    </div>
+
+</body>

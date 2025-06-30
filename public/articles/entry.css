@@ -1,0 +1,73 @@
+.mainBox{
+text-align: left;
+}
+
+h1{
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.info{
+    border-bottom: 1px dashed #7f7f7f;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+ a{
+    color:#06c;
+  }
+
+   a:hover{
+    color:#39f;
+  }
+
+  
+  #back a::before{
+    font-family: DotGothic16;
+    font-size: .9rem;
+    content: '←'; 
+    margin-right: 0.25rem;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #back a:hover::before{
+    transform: translateX(-0.25rem); 
+  }
+
+  #writing{
+    margin-top: 10px;
+  }
+
+  #writing p{
+    text-indent: 2em;
+  }
+
+  #writing p:not(:first-child){
+    margin-top: 10px;
+  }
+
+  #worksCited{
+    border-top: 1px dashed #7f7f7f;
+    padding-top: 15px;
+    margin-top: 10px;
+  }
+
+  #worksCited p{
+    margin-bottom: 10px;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .figure{
+    width: 40%;
+    height: auto;
+    float: right;
+  }
+  

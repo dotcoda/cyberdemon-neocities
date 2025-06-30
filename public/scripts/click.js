@@ -37,5 +37,5 @@ function createsoundbite(sound) {
 
 //Initialize two sound clips with 1 fallback file each:
 
-var mouseoversound = createsoundbite("audio/animal-jam-select.mp3")
-var clicksound = createsoundbite("audio/animal-jam-select2.mp3")
+var mouseoversound = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select.mp3")
+var clicksound = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select2.mp3")

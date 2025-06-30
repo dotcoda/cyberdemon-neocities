@@ -4,7 +4,7 @@
   }
 /* Gallery Pages */
 body{
-    background-image: url(/bg/bliss.png);
+    background-image: url(/images/bg/bliss.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -36,7 +36,7 @@ body{
     border-width:7px;
     border-style:solid;
     border-image: url("/border.png") 7 fill round;
-    width: 91.5%;
+    width: calc(100% - 66px);
     margin: auto;
 }
 
