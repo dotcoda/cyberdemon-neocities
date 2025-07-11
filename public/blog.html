@@ -314,6 +314,51 @@
               </article>
             </div>
 
+            <div id="711" class="tabcontent">
+              <article class="box">
+                <div class="content">
+                  <div class="date">7.11.25</div>
+                  <div class="message">
+                    hi again! its been a long time. i have been so busy and so depressed but im finally back! i'm
+                    getting ready to move into my first apartment and to start my first webedv job! everything is
+                    coming together but it took so long to get here
+                    <br><br>
+                    in like may or so i tried to re-apply to the company i had taken medical leave from and thats when
+                    everything started to fall apart basically <span class="emoji">&#xE029;</span> i went through the
+                    entire rehiring process after being told that the position would be held for me when i first left
+                    only to get rejected... its ok now because i am starting to do web
+                    page contracting! i meet with my first client soon and we are both very excited <span
+                      class="emoji">&#57382;</span>
+                    <br><br>
+                    during this time, i (as you can see) updated my website! it was a pain trying to reformat everything
+                    but i like it so much better now. i also made a professional portfolio for a class midterm last
+                    school year and got to mess around with sass, bootstrap, and node! i have also been browsing github
+                    like its a social media...
+                    <br><br>
+                    as for now... ive been getting the desire to draw again!! my boyfriend had some crayolas and an
+                    empty notebook at his new apartment and now i cant stop doodling. i have so many art ideas i want
+                    to do... if only i could find my art supplies..
+                    <br>
+                    i have also been playing too much tiny glade since i am finally not on a mac! love playing it and
+                    watching something on my second monitor for like 3 hours <span class="emoji">&#9728;</span>
+                    <br><br>
+                    and for the future... aside from my new job next week my boyfriend, our friend and i are going to
+                    the ren faire! i haven't been in so long... i think the last time was either with my dad (:/) or the
+                    4th grade with my friend that moved the next year so im excited to go again! <br>
+                    i am also looking forward to decorating my apartment. my grandma gave me the most beautiful stereo
+                    cabinet that used to be my grandpa's beore they moved off of the farm so its been sitting in her
+                    basement for years. the only condition on me taking it was that i take his polka records too so i
+                    guess my roommate is going to learn to love them (sorry zoe LOL). theres a perfect spot in my
+                    apartment for it too. cant wait to play my fonzie record.
+                    <br><br>
+                    i think thats mostly it.... hopefully it won't be another 8 months again! <span
+                      class="emoji">&#57382; &#9728;</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+
 
 
 
@@ -472,58 +517,73 @@
               <div class="panel">
                 <!--month days-->
                 <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, '1013')" id="defaultOpen">10/13</button>
+                  <button class="tablinks" onclick="openCity(event, '1013')">10/13</button>
                 </div>
                 <!--end month days-->
               </div> <!-- end October-->
 
+              <p id="year">2025</p>
+              <button class="accordion">
+                <!--July-->
+                <details class="faq__detail">
+                  <summary class="faq__summary">July</summary>
+                </details>
+              </button>
+              <div class="panel">
+                <!--month days-->
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, '711')" id="defaultOpen">7/11</button>
+                </div>
+
+              </div>
+
+
+
             </div>
 
-          </div>
 
-
-          <script>
-            function openCity(evt, cityName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(
-                  " active",
-                  ""
-                );
-              }
-              document.getElementById(cityName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
-
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-          </script>
-          <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
+            <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
                 }
-              });
-            }
-          </script>
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(
+                    " active",
+                    ""
+                  );
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+
+              // Get the element with id="defaultOpen" and click on it
+              document.getElementById("defaultOpen").click();
+            </script>
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
+          <img class="mobileHidden dsGuy" src="images/newPX/DS.png">
         </div>
-        <img class="mobileHidden dsGuy" src="/images/newPX/DS.png">
       </div>
     </div>
-  </div>
 </body>
 
 </html>

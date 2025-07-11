@@ -1,3 +1,14 @@
+
+    @font-face { 
+      src: url(fonts/NitroDS-font_v1.0/nitrods-font.ttf); 
+      font-family: DS; 
+    }
+
+    .emoji{
+      font-family: DS;
+    }
+    
+
 #flex{
   justify-content: space-evenly;
 
@@ -14,8 +25,8 @@ span{
 }
 
 #titleFront{
-  width:17vw;
-  background-image: url('/images/graphics/NintendogAssist.webp');
+  width:13vw;
+  background-image: url('images/graphics/NintendogAssist.webp');
 
 }
 
@@ -61,7 +72,7 @@ span{
   transition: 0.4s;
   border-radius: 0px;
   text-shadow: 2px 2px 0px #FFFFFF;
-  background-image: url(/images/bg/pictoButton.png);
+  background-image: url(images/bg/pictoButton.png);
   background-repeat: repeat-x;
   margin: auto;
   margin-top: 10px;
@@ -92,13 +103,13 @@ button.accordion.active{
  button.accordion::before{
   text-shadow: 2px 2px 0px #A2A2A2;
   border-radius: 0px;
-  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  background-image: url(images/bg/pictoButtonHover.png)!important;
   box-shadow:none;
 
 }
 
 button.accordion::after{
-  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  background-image: url(images/bg/pictoButtonHover.png)!important;
   text-shadow: 2px 2px 0px #A2A2A2;
   border-radius: 0px;
   box-shadow:none;
@@ -106,14 +117,14 @@ button.accordion::after{
 }
 
 button.accordion:focus{
-  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  background-image: url(images/bg/pictoButtonHover.png)!important;
   text-shadow: 2px 2px 0px #A2A2A2;
   border-radius: 0px;
 
 }
 
 button.accordion:not(:disabled):hover{
-  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  background-image: url(images/bg/pictoButtonHover.png)!important;
   text-shadow: 2px 2px 0px #A2A2A2;
   border-radius: 0px; 
   box-shadow:none;
@@ -121,14 +132,14 @@ button.accordion:not(:disabled):hover{
 }
 
 button.accordion:hover{
-  background-image: url(/images/bg/pictoButtonHover.png)!important;
+  background-image: url(images/bg/pictoButtonHover.png)!important;
   text-shadow: 2px 2px 0px #A2A2A2;
   border-radius: 0px;
   box-shadow:none;
 }
 
 #months {
-  background-image: url(/images/bg/bottom_screen.png);
+  background-image: url(images/bg/bottom_screen.png);
   background-size: contain;
   background-repeat: no-repeat;
     margin: 0;
@@ -137,7 +148,7 @@ button.accordion:hover{
 }
 
 #months2 {
-  background-image: url(/images/bg/drawui-removebg-preview.png);
+  background-image: url(images/bg/drawui-removebg-preview.png);
   background-size: contain;
   background-repeat: no-repeat;
 position: absolute; 
@@ -171,7 +182,7 @@ button.tablinks{
   text-align: end;
   border:none!important;
   border-radius: 0px;
-  background-image: url(/images/bg/dateBG.png)!important;
+  background-image: url(images/bg/dateBG.png)!important;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 5px;
@@ -184,7 +195,7 @@ button.tablinks{
 button.tablinks.active::after{
   border-radius: 0px;  
   box-shadow:none;
-  background-image: url(/images/bg/dateBgHover.png)!important;
+  background-image: url(images/bg/dateBgHover.png)!important;
   background-repeat: no-repeat;
   background-size: 100% 100%;
     
@@ -192,7 +203,7 @@ button.tablinks.active::after{
   button.tablinks.active{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   
@@ -201,7 +212,7 @@ button.tablinks.active::after{
    button.tablinks::before{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   
@@ -210,7 +221,7 @@ button.tablinks.active::after{
   button.tablinks::after{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -218,7 +229,7 @@ button.tablinks.active::after{
   button.tablinks:focus{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -226,7 +237,7 @@ button.tablinks.active::after{
   button.tablinks:not(:disabled):hover{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -234,14 +245,14 @@ button.tablinks.active::after{
   button.tablinks:hover{
     border-radius: 0px;  
     box-shadow:none;
-    background-image: url(/images/bg/dateBgHover.png)!important;
+    background-image: url(images/bg/dateBgHover.png)!important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
 /*end dates*/
 #year{
-  background-image: url(/images/bg/choose.png);
+  background-image: url(images/bg/choose.png);
   background-repeat: repeat-x;
   background-size: 100% 100%;
   font-family:basiic;
@@ -249,7 +260,10 @@ button.tablinks.active::after{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0;
   font-size: 30px;
   padding: 5px;
-  margin-bottom: 10px;
+}
+
+#year:not(:first-child){
+  margin:16px 0px;
 }
 
 
@@ -260,7 +274,7 @@ button.tablinks.active::after{
 }
 
 #note {
-  background-image: url(/images/bg/background.png);
+  background-image: url(images/bg/background.png);
   background-size: contain;
   background-repeat: no-repeat;
     height:350px;
