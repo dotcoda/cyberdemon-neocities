@@ -7,8 +7,20 @@
     <language>en-us</language>
 
      <item>
+    	<guid>post-5</guid>
+        <link>https://cyberdemon.neocities.org/blog</link>
+        <title>New Blog Post</title>
+        <description>
+            midwesterner goes to the east coast
+        </description>
+        <pubDate>
+        Mon, 11 Aug 2025 12:41:42 -0500
+        </pubDate>
+    </item>
+
+     <item>
     	<guid>post-4</guid>
-        <link>https://cyberdemon.neocities.org/blog/</link>
+        <link>https://cyberdemon.neocities.org/blog</link>
         <title>New Blog Post</title>
         <description>
             a little life update!
