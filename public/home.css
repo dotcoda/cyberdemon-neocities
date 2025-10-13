@@ -10,6 +10,25 @@ body{
   margin: 0px;
 }
 
+.mainBox a{
+  color:#b032cf!important;
+}
+
+a:hover{
+  color:#ff9733!important;
+}
+
+#lights{
+  background-image: url(https://64.media.tumblr.com/32cf58b17e99eca6facea1f30df559ac/tumblr_inline_p7xoueBhO61rhwzwl_250.gifv);
+  background-repeat: repeat-x;
+  height:65px;
+  position:absolute;
+  width: 100%;
+  top:0;
+  z-index: 1;
+
+}
+
 .feed-title{
   display: none;
 }
@@ -46,12 +65,15 @@ body{
       filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
       color:white;
       text-align: left;
+      position: relative;
+      z-index: 2;
+
     }
     
     #title img{
       height:130px; 
       margin-bottom:-15px; 
-      margin-left:-100px
+      margin-left:-60px;
     }
 
 
@@ -86,8 +108,9 @@ body{
     #welcome{
       border:1px solid black;
       border-radius:10px;
-      background-image: url(/images/bg/field.png);
-      background-size:cover;
+      background-image: url(https://files.catbox.moe/qj6i5v.png);
+      background-repeat: repeat;
+      background-size: 13px;
       padding:15px;
       position: relative;
     }
@@ -121,8 +144,11 @@ body{
     
     #cool{
       position: absolute;
-      right:-32px;
-      bottom:0px;
+      right:-30px;
+      bottom:-10px;
+      width: auto;
+      height: 4rem;
+      image-rendering: pixelated;
 
     }
 
@@ -133,8 +159,12 @@ body{
       border:1px solid black;
       border-radius:10px;
       padding:5px;
-      background-image: url(https://i.pinimg.com/564x/c4/ed/59/c4ed591be8089815085881844ca45b0a.jpg);
-      background-size:cover;
+      background-image: url(https://64.media.tumblr.com/f7417fcfd49cd0ae10576d552384981a/tumblr_inline_p7gjobvoCo1rhwzwl_250.png);
+      background-position: -5px;
+      background-color: #ff963348;
+
+      background-repeat: repeat;
+      background-size:40%;
       margin-top:15px;
       display: flex;
       margin-bottom: 10px;     
@@ -154,7 +184,7 @@ body{
 
 
     #statuscafe-content{
-      border:1px solid #3399ff; 
+      border:1px solid #b032cf; 
       padding:5px 10px;
       border-radius: 5px;
        overflow:auto; 
@@ -166,10 +196,11 @@ body{
     #status{
       border:1px solid black;
       border-radius:10px;
-      background-image: linear-gradient(white, #3399ff);
       padding:10px;
       margin-top:10px;
       text-align: left;
+      background: #ffffff;
+  background: radial-gradient(ellipse,rgba(255, 255, 255, 1) 0%, rgba(255, 151, 51, .5) 100%);
     }
 
     #statusContainer{
@@ -233,6 +264,7 @@ body{
         overflow:auto;
         border-radius: 5px;
         margin-top:-15px;
+        max-width: 20vw;
       }
 
       #xenicRing {
@@ -345,7 +377,7 @@ width: auto;
 }
 
 .material-icons{
-  color:#3399ff;
+  color:#b032cf;
 }
 
 #audio{
@@ -367,11 +399,10 @@ width: auto;
         padding:15px;
         width:calc(100% - 50px);
         margin-top: 7px;
-        background-image: url(/images/bg/dithered-image.png);
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-position: bottom;
-  
+        background-image: url(https://64.media.tumblr.com/2d40d069daa8e830b757b59106e297e8/tumblr_inline_p7gjocnyPg1rhwzwl_100.png);
+        background-size: 10%;
+        background-position: 5px;
+        background-repeat: repeat;  
       }
       #guestbook p{
         border:1px solid black;
