@@ -21,14 +21,13 @@ jobs:
     # This example uses a Node.js toolchain to build a site
     # If you don't need Node.js to build your site, you can omit this
     - name: Install dependencies
-      run: |
-        cd cyberdemon
-        npm install
+      working-directory: ./cyberdemon
+      run: npm install
 
-    - name: Build
-      run: |
-        cd cyberdemon
-        npm run build
+  # Build the astro site
+    - name: Build site
+      working-directory: ./cyberdemon
+      run: npm run build
 
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v3
