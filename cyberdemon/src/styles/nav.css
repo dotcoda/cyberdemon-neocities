@@ -1,0 +1,42 @@
+.window-body{
+    text-align: left;
+    backdrop-filter: blur(15px)!important;
+    padding:10px!important;
+    padding-bottom:0px!important;
+}
+
+details{
+    margin-left: 10px;
+    font-size:1rem;
+    margin-bottom: 10px!important;
+}
+
+summary{
+    font-weight: bold;
+}
+
+ul{
+    font-size: .9rem!important;
+}
+
+img{
+    width:1rem;
+    margin:0px -3px;
+    height: auto;
+}
+
+.home{
+    font-size:1rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.window-body{
+    padding: 0px!important;
+}
+
+.nav{
+    padding:10px;
+    padding-bottom: 0px;
+    border-top: 1px solid #878a8a
+}

@@ -1,0 +1,297 @@
+@font-face {
+  src: url(https://cinni.net/fonts/basiic.ttf);
+  font-family: basiic; /*normal*/
+}
+
+@font-face {
+  src: url(../fonts/GrapeSoda.ttf);
+  font-family: GrapeSoda; /*headers*/
+}
+
+/* utilities */
+
+:root {
+  --font-xs: 0.7rem;
+  --font-sm: 0.8rem;
+  --font-base: 18px;
+  --font-md: 1.2rem;
+  --font-lg: 2rem;
+  --font-xl: 5rem;
+}
+
+p{
+  margin: 0;
+}
+
+.bg-white{
+  background-color:white;
+}
+
+.font-xs {
+  font-size: var(--font-xs);
+}
+
+.font-sm {
+  font-size: var(--font-sm);
+}
+
+.font-base {
+  font-size: var(--font-base);
+}
+
+.font-md {
+  font-size: var(--font-md);
+}
+
+.font-lg {
+  font-size: var(--font-lg);
+}
+
+.font-xl {
+  font-size: var(--font-xl);
+}
+
+.pixel{
+  image-rendering: pixelated;
+}
+
+.radius-5{
+  border-radius: 5px;
+}
+
+.radius-10{
+  border-radius: 10px;
+}
+
+.border{
+  border:1px solid black;
+}
+
+.drop-shadow{
+  filter: drop-shadow(1px 0 0 black) 
+  drop-shadow(0 1px 0 black)
+  drop-shadow(-1px 0 0 black) 
+  drop-shadow(0 -1px 0 black);
+}
+
+.w-auto{
+  width: auto;
+  height: 100%;
+} 
+
+.h-auto{
+  height: auto;
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.webHidden{
+  visibility: hidden;
+  height: 0px;
+}
+
+/** basic tooltip from tutorial-baby**/
+.tooltip{
+  display:inline;
+  position:relative;
+  }
+
+  #s-m-t-tooltip{
+    /* basic */
+    max-width: 300px;
+    text-decoration: underline;
+    z-index: 100;
+    margin: 24px 14px 7px 12px;
+    /* style and design */
+    padding:10px;
+    background: linear-gradient(180deg,#fff,#ebebeb);
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 3px;
+    box-shadow: 5px 5px 3px -3px rgba(0,0,0,.4);
+    text-decoration:none;
+    font-size: var(--font-sm);
+  }
+  
+  #s-m-t-tooltip::before{
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.5 1.5v18h18l-18-18Z' fill='%23fff' stroke='%23fff'/%3E%3Cpath d='M1 19.5H.5v-18l18 18H18' stroke='%23939393'/%3E%3C/svg%3E");
+    content: "";
+    height: 18px;
+    left: 1em;
+    position: absolute;
+    top: -18px;
+    width: 18px;
+  }
+
+/* global styles */
+
+body {
+  font-size: var(--font-base);
+  color: black;
+  font-family: basiic;
+  background-image: url("../images/backgrounds/bg.png");
+  background-repeat: repeat;
+  background-color: white;
+}
+
+a {
+  transition: 0.4s;
+  text-decoration: none !important;
+  color: black;
+}
+
+h1 {
+  font-size: var(--font-xl);
+  font-family: GrapeSoda;
+  color: white;
+  margin: 0;
+  margin-left: 50px;
+  text-align: left;
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+}
+
+h2{
+  color:white; 
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0; 
+  margin: 0px;
+  margin-bottom:-15px; 
+  z-index:3; 
+  position: relative; 
+  font-size:var(--font-lg);
+  z-index:10;
+  text-align: center;
+}
+
+mark {
+  background-color: #3399ff;
+  color: #fff;
+}
+/* custom styles */
+
+#main {
+  margin: auto;
+  width: 72vw;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.mainBox {
+  border-width: 7px;
+  border-style: solid;
+  border-image: url("../images/border.png") 7 fill round;
+  padding: 10px!important;
+}
+
+.mainBox a{
+  color: #06c;
+}
+
+
+.mainBox a:hover{
+  color: #3399ff;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 20px;
+  margin-bottom: 10px;
+}
+
+.flexChild {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0px;
+  text-align: center;
+  width: fit-content;
+}
+
+.child-equal {
+  flex: 1;
+}
+.child-small {
+  flex: 0.3;
+}
+.child-half {
+  flex: 0.5;
+}
+
+.titleImage{
+  width:fit-content;
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  body{
+    overflow-x: hidden!important;
+    margin: 0;
+  }
+  #main{
+    width: 80%!important;
+    margin: auto;
+  }
+
+  h1, #homeTitle{
+    font-size: 10vw!important;
+    margin-left:10vw;
+    margin-bottom: -15px;
+  }
+
+  #homeTitle{
+    margin-top: 15px;
+  }
+
+  img{
+    margin:0!important;
+  }
+
+  .titleImage{
+    width: 70%;
+  }
+
+  #homeTitle img{
+    width: 30%!important;
+    height: auto!important;
+    margin-right: -45px!important;
+  }
+  
+
+  .flex {
+    flex-direction: column;
+    
+  }
+  
+  .mobileHidden{
+    visibility: hidden;
+    height: 0px;
+    position: absolute;
+  }
+
+  .webHidden{
+    visibility:visible;
+    height: auto;
+  }
+
+  ul[role="menubar"] > [role="menuitem"] {
+    padding: 10px 1.5vw!important;
+    font-size: var(--font-sm);
+  }
+
+  .flexChild {
+    width: auto;
+  }
+
+}
+

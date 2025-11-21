@@ -1,0 +1,33 @@
+
+
+
+
+ 
+ .layouts img{
+   width: 100%;
+   height: auto;
+   border:1px solid black;
+  transition: transform .5s; 
+  border-radius: 5px;
+ }
+ 
+ .layouts img:hover{
+   transform: scale(.9); 
+   border-radius: 0px;
+   
+ }
+ 
+
+ 
+ h5{
+   margin: auto;
+   margin-top: 10px;
+   font-size: var(--font-md);
+ }
+ 
+ #home{
+    padding: 5px 15px;
+    font-size: var(--font-md);
+ }
+ 
+ 

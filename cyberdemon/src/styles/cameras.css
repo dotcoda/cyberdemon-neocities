@@ -1,0 +1,128 @@
+.cameraBox{
+    overflow: auto; 
+    height: 473px; 
+    padding:20px;
+    background-image: url(../images/backgrounds/dithered-field.png);
+    background-size: cover;
+}
+
+.blankCameraBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    background-color: white; 
+    width: calc(100% - 25px);    
+    font-size:  var(--font-sm);
+}
+
+
+.camera{
+    padding:20px 9px;
+    border-radius: 3px;
+    border: 1px solid black;
+    flex:.5;
+    box-sizing: border-box;
+   
+    p{
+        text-align: left;
+    }
+    span{
+        height: 100px;
+        display: block;
+    }
+
+}
+.camera img{
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(5px 0 0 #3399ff) 
+    drop-shadow(0 5px 0 #3399ff)
+    drop-shadow(-5px 0 0 #3399ff) 
+    drop-shadow(0 -5px 0 #3399ff);
+    z-index: 1;
+}
+
+.name{
+    text-align: center!important;
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.welcome{
+    font-family: basiic;
+    padding: 10px!important;
+    text-align: center;
+    img{
+        height: var(--font-base);
+        width: auto;
+        margin: 0;
+    }
+}
+
+h3{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0;
+    font-size: 1.7rem;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.resources{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    background-image: url('../images/backgrounds/squareGrid.png');
+    background-repeat: repeat;   
+    background-size:50%;
+    h4{
+        margin-bottom:-1px;
+        background-color: white;
+        border:1px solid black;
+        border-radius:5px 5px 0px 0px;
+        border-bottom: none;
+        width: fit-content;
+        padding: 5px 20px;
+        margin: auto;
+        margin-bottom: -1px;
+        z-index: 3;
+        position: relative;
+    }
+}
+
+.cameraVid{
+    padding: 5px;
+}
+
+.cameraVid button{
+padding: 5px;
+&:not(:last-of-type){
+    margin-bottom: 5px;
+}
+}
+
+
+.shop{
+    overflow:auto;
+    height:120px;
+    text-align:left;
+    padding:5px 10px;
+    background-color: white;
+    z-index:2;
+    position: relative;
+    &:first-of-type{
+        margin-bottom: 10px;
+    }
+
+}
+.shop a{
+    font-family: basiic;
+}
+
+.shop p{
+    margin-bottom:7px;
+}
+
+.flex{
+    margin-bottom: 0px;
+}

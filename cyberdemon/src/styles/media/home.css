@@ -1,0 +1,65 @@
+body{
+    background-image: url(../../images/backgrounds/squareGrid.png);
+  }
+  
+.radius-10{
+  background-image: url(../../images/backgrounds/books.png);
+  background-size: 30%;
+  padding:20px;
+  margin-top: 15px;
+}
+
+.radius-5{
+  padding:15px;
+  font-size:22px;
+  background-color: white;
+}
+
+.child-small {
+  flex: 0.6;
+}
+    
+  
+#current{
+  background-color: #F0F0F0;
+  border: 1px solid #000000b3;
+
+  h5{
+    font-size:20px;
+    margin:0;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: #3399ff;
+  
+  }
+}
+  
+#current > div:not(:last-child){
+  border-bottom: 1px solid #000000b3;
+}
+
+.entry{
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+
+  img{
+    height: 100px;
+    border: 2px ridge #a9a9a9;
+  }
+
+  p{
+    text-align: left;
+      margin-right: 5px;
+  }
+
+  div{
+    flex:1;
+  }
+}
+
+.progress{
+  display: flex;
+  justify-content: flex-start;
+}
+  

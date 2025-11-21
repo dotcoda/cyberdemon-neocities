@@ -1,0 +1,101 @@
+.mainBox{
+    position: relative;
+}
+
+.about{
+      height:calc(100% - 7px);
+      padding:0px 5px;
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center;     /* centers vertically */
+    }
+
+.pin{
+    padding:20px;
+    padding-bottom:15px;
+    background: url(/images/backgrounds/092c5e09acb80658b15aeb2e7572f8de.jpg);
+    background-size: 40%;
+}
+
+.q{
+    padding:10px;
+    height:100px;
+    overflow:auto;
+    margin-bottom: 10px;
+}
+
+#horizontal{
+    width: 205px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: .5em;
+    box-sizing: border-box;
+        height: 155px;
+    overflow-y: hidden;
+}  
+    
+#horizontal img{
+    height: 100%;
+    width: auto;
+}
+    
+.interests{
+    height: 100px;
+    overflow: auto;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.tab{
+    margin-bottom: 10px;
+}
+
+#floatie{
+    height:250px;
+    width:auto;
+    position: absolute;
+    bottom: -80px;
+    left: -200px;
+    pointer-events: none;
+  }
+
+
+.scroll-container {
+    width: 100%;
+    max-width: 410px;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+.scroll-container .scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+.scrolling-text img{
+    height: 100px;
+    width: auto;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+
+.scroll-container:hover .scrolling-text {
+    animation-play-state: paused;
+}
+
+  
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+}
+  

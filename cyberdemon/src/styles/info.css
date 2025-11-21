@@ -1,0 +1,16 @@
+p:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.border{
+    padding:10px;
+    text-align:left;
+}
+
+br{
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-top: -10px;
+}

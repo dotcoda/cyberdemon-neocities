@@ -1,0 +1,228 @@
+---
+import HomeLayout from "../../layouts/HomeLayout.astro";
+import '../../styles/home.css';
+---
+<script src="/scripts/click.js" is:inline></script>
+
+<script src="/scripts/wobble.js" is:inline></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+<HomeLayout pageName="CYBERDEMON">
+<div class="flex">
+    <div class="flexChild child-equal">
+        <!-- top left welcome -->
+        <div id="welcome" class="pixel radius-10 border"> 
+            <div id="header" class="radius-10 border bg-white">
+                <img class="radius-5 border" src="../images/graphics/wiiFrisbee.png"
+                    alt="a nintendo wii dog holding a frisbee on a beach">
+            </div>
+            <p class="radius-10 border bg-white">
+                <img src="images/pixels/f1001751-49727b05.gif" aria-hidden="true" alt=""> hello
+                and welcome to <span id="wobble">cyberdemon.neocities.org</span> v5! <img
+                    src="images/pixels/f429989.gif" alt="" aria-hidden="true">
+                my name is <a href="/about" onmouseover="mouseoversound.playclip()"
+                    onclick="clicksound.playclip()">coda </a> <img src="images/pixels/f70603.gif"
+                    aria-hidden="true" alt="">
+                and im the webmaster
+                <img src="https://64.media.tumblr.com/e1e6e5ba9a0ae3feabe0bc105d521487/ee247f500ad639c0-0b/s75x75_c1/c0d47cc1802849076ea42c0215e07abc3b6b6d37.gifv"
+                    aria-hidden="true" alt="">
+                enjoy your stay in my digital dream world <img src="images/pixels/f157698.gif"
+                    aria-hidden="true" alt="">
+            </p>
+            <img id="cool" src="../images/pixels/joeCool.gif" aria-hidden="true" alt="">
+
+
+        </div>
+
+        <!-- top left status cafe -->
+        <div id="status" class="radius-10 border">
+            <div id="tip">
+                <div style="z-index: 3; padding: 10px; margin-bottom: -5px;" role="tooltip"
+                    class="is-top is-left">
+                    <p>the webmaster is feeling: <a href="https://www.imood.com/users/coda"><img
+                                style="margin-bottom: -3px; height:1rem; width:auto"
+                                src="https://moods.imood.com/display/uname-coda/trans-1/imood.gif"
+                                alt="The current mood of coda at www.imood.com"></a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="statusContainer" class="radius-10 border bg-white">
+                <div id="statuscafe">
+                    <img src="../images/graphics/arf.png" class="drop-shadow"
+                        alt="a png of a nintendog with a the status as a speech bubble">
+                    <div style="text-align: center;" id="statuscafe-username"></div>
+                    <div
+                        id="statuscafe-content" class="radius-5"></div>
+                </div>
+                <script src="https://status.cafe/current-status.js?name=cyberdemon"
+                    defer></script>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flexChild child-half" style="position: relative;">
+       
+        <!-- Audio Element -->
+        <div class="mobileHidden radius-5 border">
+            <img style="width: 100%; height: auto;" data-toggle="tooltip"
+                title="click the button below to play a song!"
+                alt="a tv with the face of an 8bit woman talking on it"
+                src="https://64.media.tumblr.com/5de59d0bd70e4e1963745d86b3ea7051/e59782c17ffb62ce-e2/s640x960/5b12857d3978538e695967df4a768e1d036233e1.gifv">
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    
+                    <audio id="myAudio" src="https://cyberdemon.nekoweb.org/audio/retro tv.mp3" type="audio"></audio>
+                
+                    <span style="cursor:pointer; color:#3399ff; font-size:12px;" id="music" onclick="toggleAudio()">
+                        <span class="material-icons" id="icon">play_arrow</span>
+                    </span>
+                
+                    <div id="nowPlaying" class="scroll-container">
+                        <span class="scrolling-text">Now Playing: Retro TV - Animal Crossing</span>
+                    </div>
+                
+                    <span style="cursor:pointer; color:#3399ff; font-size:12px;" onclick="nextTrack()">
+                        <span class="material-icons">skip_next</span>
+                    </span>
+                </div>
+                
+               <script src="/scripts/audio.js" is:inline></script>
+        </div>
+
+        <!-- top right about -->
+        <div id="about" class="border radius-10">
+            <img id="mii" src="/images/graphics/mii.gif" class="drop-shadow" alt="a red haired mii face">
+
+            <p class="bg-white border radius-10 child-equal">
+                coda <br>
+                twenty-one<br>
+                they/any <img class="border"
+                    alt="trans flag"
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2dbd0ffa-0723-42f6-8cb3-5375aa7451c8/dfxr2pc-1a985cd1-952d-469e-9e44-f01fb53292d7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJkYmQwZmZhLTA3MjMtNDJmNi04Y2IzLTUzNzVhYTc0NTFjOFwvZGZ4cjJwYy0xYTk4NWNkMS05NTJkLTQ2OWUtOWU0NC1mMDFmYjUzMjkyZDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.m5SpKr9fgWRs0Y7hEfsRw9V7AkKv66jwukY04vbPtK4">
+                <br>
+            </p>
+        </div>
+
+        <!-- top right link -->
+        <h2>link me!</h2>
+        <div id="link" class="border bg-white radius-5">
+            <center> <img class="w-auto" src="https://cyberdemon.neocities.org/button.png"
+                    alt="the button of cyberdemon"></center>
+            <textarea id="myInput"
+                style="height:30px; width:93%; margin-top:5px; margin-left:5px;"
+                id="myInput">&lta href="https://cyberdemon.neocities.org/"&gt&ltimg src="https://cyberdemon.neocities.org/button.png" alt="the button of cyberdemon"&gt&lt/a&gt</textarea>
+            <button style="float:left; margin-left:5px; margin-right:5px"
+                onclick="copy()">Copy</button>
+            <script>
+                function copy() {
+                    // Get the text field
+                    var copyText = document.getElementById("myInput");
+
+                    // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                    // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
+                }
+            </script>
+        </div>
+
+        <img class="fish mobileHidden" 
+        aria-hidden="true" alt=""
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9cbba6e5-cffe-4537-a24a-305b77e34fb7/djkjujv-baecf96c-ae18-4691-b344-16a24403cd72.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljYmJhNmU1LWNmZmUtNDUzNy1hMjRhLTMwNWI3N2UzNGZiN1wvZGpranVqdi1iYWVjZjk2Yy1hZTE4LTQ2OTEtYjM0NC0xNmEyNDQwM2NkNzIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xQkN3Y0Pm46XSS8MTHqzvfFS5P0Ni1tq0m9v2ICq7aM">
+        
+
+    </div>
+
+
+<!-- bottom layer -->
+   
+
+</div>
+<div id="bigBox" class="radius-10 border">
+    <div class="littleBox border radius-5 bg-white">
+        <div class="flex" style="margin-bottom: 0;">
+            <!-- webrings -->
+            <div class="flexChild child-equal">
+                <h2 style="margin-top: -10px;">webrings!</h2>
+                <div id="webrings" class="bg-white border radius-5">
+                    
+                
+                </div>
+            </div>
+            <!-- guestbook -->
+            <div class="flexChild child-equal">
+                <div id="guestbook" class="border radius-5">
+                    <p class="border radius-5 bg-white">pssst check out my <a
+                            href="https://cyberdemon.atabook.org/">guestbook</a>! <img
+                            style="height:20px; margin-bottom: -5px; width:auto" aria-hidden="true" alt=""
+                            src="https://64.media.tumblr.com/88b3a3d373c60717c4a28054491fe454/e41345b50691e398-d3/s75x75_c1/7bb9ed569c159abdb964eb11345bfb79361f383e.gifv">
+                    </p>
+                </div>
+                <!-- clap -->
+                <div id="clap">
+                    <a href="//clap.fc2.com/post/cyberdemon/?url=https%3A%2F%2Fcyberdemon.neocities.org%2F"
+                        target="_blank" title="Web Clap by FC2">
+                        <img src="https://i.redd.it/o7je18ujev6d1.png" alt="Web Clap by FC2"
+                            style="border:none; width: 100%; height: auto; margin-bottom: -5px;" />
+                        <img class="w-auto" src="//clap.fc2.com/images/button/white/cyberdemon?url=https%3A%2F%2Fcyberdemon.neocities.org%2F&amp;lang=en"
+                            alt="Web Clap by FC2" style="border:none;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2>mutuals</h2>
+        
+        <div class="scroll-container border radius-5">
+			<span class="scrolling-text">
+				<a href="https://caitsith.neocities.org/"><img src="https://caitsith.neocities.org/sitebutton.gif" alt="the button of caitsith.neocities.org " width="88" height="31"></a>
+                <a href="https://philia995.neocities.org/"><img src="https://files.catbox.moe/h6gccq.png" alt="Philia995" style="width:88px;height:31px;"></a>
+                <a href="https://humantooth.neocities.org/" target="_blank"><img src="https://humantooth.neocities.org/buttons/tooth4.png" alt="humantooth"></a>
+                <a href="https://roboticoperatingbuddy.neocities.org/"><img src="https://file.garden/ZDrtGB-J4RNQd5ky/neocitieseng/mybutton" alt="roboticoperatingbuddy"></a>
+                <a href="https://unit00.neocities.org/"><img src="https://files.catbox.moe/vd3o4c.gif" alt="unit00"></a>
+                <a href="https://mspaintdemon.neocities.org/"><img src="https://mspaintdemon.neocities.org/buttons/bb%20buttton.png" alt="mspaintdemon"></a>
+                <a href="https://magooka.neocities.org/"><img src="https://magooka.neocities.org/magookabutton.gif" width="88" height="31" alt="magooka"></a>
+                <!--strawbebby's button 88x31--><a href='https://strawbebby228.neocities.org/' target='_blank'><img src='https://strawbebby228.neocities.org/arts/UI/ButtonPink.gif' alt="strawbebby228"></a>
+                <a href="https://alongcomesmary.neocities.org"><img src="https://i.postimg.cc/zBG8XZx0/alongcomes2.gif" alt="alongcomesmary"></a>
+                <a href="https://kidwiththechemicalz.neocities.org/" target="_blank"><img src="https://kidwiththechemicalz.neocities.org/88x31.gif" alt="kidwiththechemicalz"> </a>
+                <a href="https://felinewasteland.neocities.org/"><img src="https://felinewasteland.neocities.org/img/button_salem.gif" alt="felinewasteland"></a>
+                <a href="https://thingamabob.neocities.org/"><img src="https://thingamabob.neocities.org/Homepageimages/button.png" width="88px"  alt="thingamabob"></a>  
+                <a href="https://circat.neocities.org/"><img src="https://circat.neocities.org/button.png" alt="circat"></a>
+                <a href="https://sunnyday.neocities.org/" target="_blank"><img src="https://sunnyday.neocities.org/button0.png" alt="sunnyday"></a>
+                <a href="https://renyoi.neocities.org/" target="_blank"><img src="https://renyoi.neocities.org/button.gif" alt="red button to renyoi's neocities page"></a> 
+                <a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg" alt="leizy8499"></a>
+                <a href="https://burgeritchi.neocities.org" target="_blank"><img src="https://files.catbox.moe/29hdqz.webp" width="88" height="31" alt="burgeritchi"></a>
+                <a href="https://milk-tea.neocities.org/" target="_blank"><img src="https://files.catbox.moe/b07i7z.gif" alt="milk-tea"></a>
+                <a href="https://petyou.neocities.org/"> <img src="https://64.media.tumblr.com/735a50f7a6ac42fb17ca446610281b66/62b2544cad7da2ec-67/s100x200/369fe017c71bc544c426fc6b0b7b65c6c842ed2d.pnj" alt="petyou"></a>
+                <a href="https://bugkisser.neocities.org/"><img src="https://bugkisser.neocities.org/buttons/bugkisser!.png" alt="bugkisser"></a>
+                <a href="https://nyani58.nekoweb.org/" target="_blank"><img src="https://files.catbox.moe/k4kbag.gif" alt="nyani58"></a>
+                <a href="https://yaoiwarrior.neocities.org/" target="_blank"><img src="https://files.catbox.moe/jfrrwh.gif" alt="yaoiwarrior"></a>
+                <a href="https://angelnetcast.com/" target="_blank"><img src="https://files.catbox.moe/efjpio.gif" alt="angelnetcast"></a>
+                <a href="https://puppygrass.neocities.org/" target="_blank"><img src="https://files.catbox.moe/atr6bl.gif" alt="puppygrass"></a>
+                <a href="https://ruralrose.neocities.org/" target="_blank"><img src="https://files.catbox.moe/y1z922.gif" alt="ruralrose"></a>
+                <a href="https://monsieurdoll.neocities.org" target="_blank"><img src="https://i.imgur.com/j85uDmZ.png" alt="monsieurdoll"></a>
+                <a href="https://princss.online" target="_blank"><img src="https://princss.online/media/images/buttons/princss_button.png" alt="princss.online"></a>
+                <a href="https://fearofmusic.neocities.org/" target="_blank"><img src="https://files.catbox.moe/kpfyai.png" alt="fearofmusic"></a>
+                <a href="https://trebrin.neocities.org/" target="_blank"><img src="https://files.catbox.moe/96ml0f.png" alt="trebrin"></a>
+                <a href="https://hmln.neocities.org/" target="_blank"><img src="https://hmln.neocities.org/button.png" alt="hmln"></a>
+                <a href="https://fuchi.neocities.org/"><img src="https://fuchi.neocities.org/fuchibutton.jpeg" alt="fuchi"></a> 
+                <a href="https://fwing.pet"><img src="https://i.imgur.com/I6ILNQ1.gif" alt="fwing.pet"></a>
+                <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/ricedotplace.png" alt="rice.place"></a>
+                <a href="https://darkosparko.nekoweb.org" target="_blank"><img src="https://darkosparko.nekoweb.org/rocket-button.gif" alt="Rocket into the Spark-Web!"></a>
+                <a href="https://alheli.nekoweb.org/"><img src="https://alheli.nekoweb.org/assets/images/index/alheli-button.png" alt="alheli"></a>
+                <a href="https://layercake.nekoweb.org/"><img style="image-rendering: pixelated" src="https://layercake.nekoweb.org/links/images/layercakebutton.gif" alt="an 88 x 31 button, the background is a cake and it has the text 'layercake' upon it"></a>
+                <a href="https://toasty.place/" target="_blank"><img src="https://toastofthesewn.nekoweb.org/images/buttons/sitebutton2.png" alt="toasty.place" ></a>
+                <a href="https://altalenae.neocities.org/" target="_blank"><img src="https://files.catbox.moe/bu27p2.png" alt=altalenae"></a>
+                <a href="https://dreamvalley.neocities.org/"> <img src="https://dreamvalley.neocities.org/button%202.png" alt="dreamvalley"></img></a> 
+                
+
+			</span>
+        </div>
+        <img id="floatie" src="../images/graphics/collie2.png" aria-hidden="true" alt="">
+
+    </div>  
+</div>
+</HomeLayout>

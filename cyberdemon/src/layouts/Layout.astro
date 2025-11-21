@@ -1,0 +1,44 @@
+---
+import '../styles/style.css';
+const { pageName, width, headerImg, headerWidth } = Astro.props;
+
+
+---
+<script src="/scripts/click.js" is:inline></script>
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>CYBERDEMON</title>
+		<link rel="stylesheet" href="https://unpkg.com/7.css">
+
+		<script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script is:inline src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+	  
+		<script is:inline>
+		  (function($){
+			$(document).ready(function(){
+			  $("[title], a[title], img[title]").style_my_tooltips({
+				tip_follows_cursor: true,
+				tip_delay_time: 90,
+				tip_fade_speed: 600,
+				attribute: "title"
+			  });
+			});
+		  })(jQuery);
+		</script>
+	</head>
+	<body>
+	
+		<div id="main" style={`width: ${width};`}>
+			<div class="titleImage" style={`background-image: url(${headerImg}); padding-right: ${headerWidth}`}>
+				<h1>{pageName}</h1>
+			</div>
+			<slot />
+		</div>
+	</body>
+</html>

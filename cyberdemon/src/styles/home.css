@@ -1,0 +1,294 @@
+#homeTitle{
+font-size: 6rem;
+}
+
+#homeTitle img{
+  height: 143px;
+  width: auto;
+  bottom: -8px;
+  margin-left: -73px;
+  position: absolute;
+}
+
+/*top left welcome*/
+  #welcome{
+    background-image: url(../images/backgrounds/field.png);
+    background-size:cover;
+    padding:15px;
+    position: relative;
+  }
+
+  #welcome p{
+    padding:10px 10px;
+    margin-bottom: 0px;
+  }
+  
+  #header {
+    padding:7px;
+    padding-right: 9px;
+    margin-bottom: 10px;
+
+  }
+
+  #header img{
+    width:100%;
+    height:auto;
+    margin-bottom:5px; 
+    image-rendering: none;
+    margin-bottom: -4px;
+  }
+
+      
+  #cool{
+    position: absolute;
+    right:-25px;
+    bottom: 0px;
+    image-rendering: pixelated;
+    width: 64px;
+    height: auto;
+
+  }
+
+/*top left status cafe*/  
+  #statuscafe-content{
+    border:1px solid #3399ff; 
+    padding:5px 10px;
+     overflow:auto; 
+     margin-top:3px;
+      height: 42px;
+  }
+
+  #statuscafe img{
+          float:right;
+          shape-outside: ellipse(); 
+          height:90px;
+          width: auto;
+           margin-top: -5px;
+          z-index: 1;
+          margin-left: 10px;
+  }
+
+  #status{
+    background-image: url(../../images/backgrounds/dithered-image.png);        
+    background-size: cover;
+    background-position: bottom;
+     padding:10px;
+    margin-top:10px;
+    text-align: left;
+  }
+
+  #statusContainer{
+    padding:30px 10px;
+    text-align: left;
+    padding:10px; 
+    margin-top:10px
+  }
+
+  /*updates*/
+
+  .feed-title{
+    display: none;
+  }
+  
+  .feed-item-title{
+    font-size: 1rem;
+    background-color: #3399ff;
+    padding:3px 5px;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0;
+  }
+  
+  .feed-item-title a{
+    color: #fff;
+  
+  }
+  
+  .feed-item-title a:hover{
+    color: #fff;
+    text-shadow: none; 
+  
+  }
+  
+  .feed-item-desc{
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #8e8f8f;
+    margin: 10px 0px;
+    font-size: .9rem;
+  }
+/*top right about*/
+  #about{
+    padding:5px;
+    background-image: url(https://i.pinimg.com/564x/c4/ed/59/c4ed591be8089815085881844ca45b0a.jpg);
+    background-size:cover;
+    margin-top:15px;
+    display: flex;
+    margin-bottom: 10px;     
+
+    p{
+      
+      padding:8px 10px;
+      text-align: left;
+      line-height: 1.3;
+      width: fit-content;
+
+      img{
+        height:10px; 
+        margin-bottom: -2px;
+      }
+    }
+  }
+
+  #mii{
+    height:65px; 
+    width: auto;
+    margin:auto 10px;
+  }
+
+  /*top right link*/
+
+
+  #link{
+    padding-top:15px; 
+    text-align:left;
+     height:110px; 
+     margin-bottom: 10px
+  }
+
+  .fish{
+    width: 40%; 
+    height: auto; 
+     position: absolute;
+      bottom: 0; 
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+/*bottom layer*/
+  #bigBox{
+    padding:20px;
+    padding-bottom: 10px;
+    background-image: url(https://i.pinimg.com/736x/d1/cc/23/d1cc239d3d76789fab3ea4dc2280b148.jpg);
+    background-size: cover;
+    position: relative;
+    }
+
+    .littleBox{
+      padding:15px;
+      }
+
+#floatie{
+  height:300px;
+  width:auto;
+  position: absolute;
+  bottom: -60px;
+  right: -130px;
+  pointer-events: none;
+}
+
+/*webrings*/
+#webrings{
+  height:300px;
+  padding:10px;
+  overflow:auto;
+  margin-top:-15px;
+}
+
+#xenicRing {
+  font-size:15px;
+  margin-top:10px;
+
+}
+
+#xenicRing #xenicFlag {
+  background: url('images/bg/puppygender.webp')!important;
+}
+
+#xenicRing .webring-head {
+   padding-bottom: 15px;
+  
+}
+
+/*guestbook*/
+
+#guestbook{
+  padding:25px;
+  margin-top:10px;
+  width:calc(100% - 50px);
+  background-image: url(/images/backgrounds/dithered-field.png);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+ p{
+  padding:40px 30px; 
+ }
+}
+
+#clap{
+  width: 70%;
+  margin:10px auto;
+}
+ 
+.mutuals{
+  background-color: white;
+  padding: 5px;
+}
+
+
+.scroll-container {
+  max-width: 44vw;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+}
+
+.scroll-container .scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  img{
+    width: 88px;
+    height: auto;
+    margin: 0;
+    margin-bottom: -3px;
+    margin-right: 10px;
+  }
+}
+.scroll-container:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+#nowPlaying{
+  width: 12vw;
+  &.scroll-container .scrolling-text {
+    animation: scroll-left-pause 5s linear infinite;
+  }
+}
+
+
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left-pause {
+  0% {
+    transform: translateX(0%);
+  }
+  85% { /* 5s of scrolling in a 6s animation = 5/6 = ~83.33% */
+    transform: translateX(-100%);
+  }
+  100% { /* last 1s is the pause */
+    transform: translateX(-115%);
+  }
+}

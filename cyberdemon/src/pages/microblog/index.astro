@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import '../../styles/microblog.css';
+---
+<script src="/scripts/microblog.js" is:inline></script>
+
+
+<Layout width="50vw">
+    <div id="back"><a href="/home">go back</a></div>
+
+    <div class="main">
+        <div class="header">
+           
+        </div>
+        <div class="flex" style="padding: 20px;">
+            <div class="flexChild child-half">
+                <img class="icon" src="/images/graphics/Friendly_Dog.webp">
+                <h1>CODA</h1>
+                <h2>@cyberdemon</h2>
+                <p><span>0</span> followers <span>420</span> following</p>
+                <div class="border radius-5 text-left">
+                    welcome to my microblog AKA all of my status cafe posts in one place :p
+                </div>
+
+            </div>
+            <div class="flexChild child-equal">
+               <p>recent posts by <span style="color: inherit; font-weight: bold;">CODA</span></p>
+               <hr>
+               <div id="feed-reader"></div>
+               <a href="https://status.cafe/users/cyberdemon" target="_blank">load more...</a>
+
+            </div>
+        </div>
+    </div>
+</Layout>
+

@@ -1,0 +1,171 @@
+.mainBox{
+    margin:auto;
+}
+ 
+#boxContainer {
+    background-image: url(/images/backgrounds/squareGrid.png);
+    background-repeat: repeat;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+img{
+    height:1rem;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.border{
+    padding:15px;
+    background-color: white;
+    position: relative;
+}
+
+
+.title-bar-text span{
+    z-index: 2;
+  }
+
+  .title-bar-text img{
+    height: 17px; 
+    margin-bottom: -2px;
+    z-index:1;
+    filter: 
+    drop-shadow(1px 0 5px white) 
+    drop-shadow(0 1px 5px white)
+    drop-shadow(-1px 0 5px white) 
+    drop-shadow(0 -1px 5px white);
+
+  }
+  #header{
+    padding-left:20px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #icon{
+    position: relative;
+    border-width:14px;
+border-style:solid;
+border-image: url("https://files.catbox.moe/rwuyde.png") 10 fill round;
+    width:50px;
+    height:50px;
+margin-right:10px;
+margin-left: -10px;
+}
+
+#icon img{
+    border-radius: 3px;
+    margin-left: -4px;
+    margin-top: -4px;
+    width: calc(100% + 6px);
+    height: auto;
+  }
+
+  
+  #title{
+    font-size: 20px;
+    padding-top: 10px;
+    text-shadow: 0 0 2px #fff,0 0 52px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff;
+    line-height: 95%;
+    
+  }
+
+  #title span{
+    font-size:15px;
+  }
+
+
+#title a{
+  font-size: 17px;
+}
+
+.links{
+    margin-left: 20px;
+}
+
+  
+span{
+    position: relative;
+}
+
+.dog{
+  position: absolute;
+  width: 200px;
+  right:0;
+  bottom:10px;
+}
+ 
+
+.second{
+    margin-left: 25px;
+    a{
+        position: relative;
+    }
+    a::before{
+      border-left: 1px dotted #000;
+      content: "";
+      height: calc(100% - 50%);
+      left: -12px;
+      position: absolute;
+      top: 0;
+    }
+}
+  
+    .links span::before{
+      border-bottom: 1px dotted #000;
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: calc(50% + 1px);
+      width: 9px;
+    }
+  
+    .floatie{
+      position: absolute;
+      right: 0;
+      bottom:0;
+      width: 150px!important;
+      height: auto!important;
+      filter: 
+      drop-shadow(1px 0 0 black) 
+      drop-shadow(0 1px 0 black)
+      drop-shadow(-1px 0 0 black) 
+      drop-shadow(0 -1px 0 black);
+    }
+  
+  h2{
+    pointer-events: none;
+  }
+  
+       
+    @media (max-width: 800px) {
+      #main{
+        width: 80%!important;
+        margin: auto;
+        position: inherit;
+        top: inherit; left: inherit;
+        transform: inherit;
+        margin-top:inherit; 
+      }
+
+    h2{
+      margin-bottom: 0px;
+    }
+  
+        .floatie{
+          width: 20vw!important;
+         
+        }
+
+        #header{
+          flex-direction: column;
+        }
+    }
+  
+  

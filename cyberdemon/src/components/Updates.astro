@@ -1,0 +1,169 @@
+
+<div
+  class="window active"
+  style="width:auto; background-color: #3399ff; z-index: 3; margin-top: 20px;"
+>
+  <!--site info start-->
+  <div class="title-bar">
+    <div class="title-bar-text">SITE INFO</div>
+    <div class="title-bar-controls" aria-hidden="true">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    
+    <section class="tabs">
+        <menu role="tablist" aria-label="Tabs Template">
+            <button role="tab" aria-controls="tab-A" aria-selected="true">Updates</button>
+            <button role="tab" aria-controls="tab-C">Past</button>
+            <button role="tab" aria-controls="tab-B">To-Do</button>
+            <button role="tab" aria-controls="tab-D" disabled> <a style=" color: #222; "
+                    href="/feed.xml">RSS
+                    <svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                        viewBox="0 -1100 960 960" width="15px" fill="currentColor">
+                        <path
+                            d="M215.79-144Q186-144 165-165.21t-21-51Q144-246 165.21-267t51-21Q246-288 267-266.79t21 51Q288-186 266.79-165t-51 21ZM720-144q0-120-45.26-224.48-45.25-104.48-123.43-182.71-78.17-78.23-182.57-123.52Q264.34-720 144-720v-96q140 0 261.63 52.38 121.63 52.37 213.59 144.28 91.96 91.9 144.37 213.46Q816-284.33 816-144h-96Zm-240 0q0-70-26-131t-72-107q-46-46-107-72t-131-26v-96q90.52 0 168.74 33.7Q390.96-508.6 450-450q58.6 59.04 92.3 137.26Q576-234.52 576-144h-96Z" />
+                    </svg></a></button>
+            <script>
+                const tabButtons = document.querySelectorAll("[role=tab]");
+                tabButtons.forEach((tabButton) => {
+                    tabButton.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const tabContainer = e.target.parentElement.parentElement;
+                        const targetId = e.target.getAttribute("aria-controls");
+                        tabButtons.forEach((_tabButton) =>
+                            _tabButton.setAttribute("aria-selected", false)
+                        );
+                        tabButton.setAttribute("aria-selected", true);
+                        tabContainer
+                            .querySelectorAll("[role=tabpanel]")
+                            .forEach((tabPanel) => tabPanel.setAttribute("hidden", true));
+                        tabContainer
+                            .querySelector(`[role=tabpanel]#${targetId}`)
+                            .removeAttribute("hidden");
+                    });
+                });
+            </script>
+        </menu>
+        <article role="tabpanel" id="tab-A"> <!--updates start-->
+            <script is:inline src="//rss.bloople.net/?url=https%3A%2F%2Fcyberdemon.nekoweb.org%2Ffeed.xml&limit=1&showtitle=false&type=js"></script>
+
+          
+            
+           
+        </article> <!--updates end-->
+
+        <article role="tabpanel" id="tab-C" hidden="true"> <!--past start-->
+            <details>
+                <summary>2023</summary>
+                <p><mark>7/17/23</mark> created site<br></p>
+                <p><mark>7/20/23</mark> started on abt pg <br>
+                    -added resource pg<br></p>
+                <p><mark>7/25/23</mark> finished abt pg <br></p>
+                <p><mark>7/24/23</mark> started media pg <br></p>
+                <p><mark>7/25/23</mark> made a button! <br>
+                    -started the dog island pg<br></p>
+                <p><mark>8/4/23</mark> finished most of the music pg <br>
+                    -missed some entries oops<br></p>
+                <p><mark>8/14/23</mark> made beanie page <br></p>
+                <p><mark>8/24/23</mark> finished book pg <br></p>
+                <p><mark>8/23/23</mark> new index layout <br></p>
+                <p><mark>8/27/23</mark> fixed minor details <br></p>
+                <p><mark>9/30/23</mark> finished blog pg<br></p>
+                <p><mark>10/3/23</mark> halloween layout!<br></p>
+                <p><mark>10/17/23</mark> new not found pg<br></p>
+                <p><mark>10/19/23</mark> books slightly updated<br></p>
+                <p><mark>11/5/23</mark> back to normal layout<br></p>
+                <p><mark>11/9/23</mark> newish home pg hehe<br> </p>
+                <p><mark>11/27/23</mark> newish home pg AGAIN<br></p>
+                <p><mark>12/01/23</mark> winter layout!<br></p>
+            </details>
+
+            <details>
+                <summary>2024</summary>
+                <p><mark>1/03/24</mark> back to normal<br></p>
+                <p><mark>1/05/24</mark> made layout pg<br></p>
+                <p><mark>04/13/24</mark> mirror on nekoweb<br></p>
+                <p><mark>04/26/24</mark> new about pg finished<br></p>
+                <p><mark>05/13/24</mark> new not found page<br>
+                    -and resource page!<br></p>
+                <p><mark>05/21/24</mark> new blog<br></p>
+                <p><mark>05/25/24</mark> new layouts page with fixed previews<br></p>
+                <p><mark>06/06/24</mark> new blog post<br></p>
+                <p><mark>07/20/24</mark> revamped media page<br></p>
+                <p><mark>07/21/24</mark> new blog post<br></p>
+                <p><mark>07/23/24</mark> lovepage finally done!<br></p>
+                <p><mark>07/30/24</mark> 3.0 FINALLY DONE!!!<br></p>
+                <p><mark>10/08/24</mark> fixed v2 archive<br></p>
+                <p><mark>10/09/24</mark> minor updates to camera pg<br></p>
+                <p><mark>11/11/24</mark> Sitemap page published<br></p>
+                <p><mark>11/14/24</mark> cyberdemon 3.5! <br>
+                    -new landing page
+                </p>
+            </details>
+
+            <details>
+                <summary>2025</summary>
+                <p><mark>1/2/25</mark> new year new resource page</p>
+                <p><mark>1/5/25</mark> music and books updated in media</p>
+                <p><mark>2/4/25</mark> cameras moved to it's own page<br>
+                    -new gallery page
+                </p>
+                <p><mark>6/10/25</mark> cyberdemon v4!</p>
+                <p><mark>6/30/25</mark> <s>new articles page</s></p>
+                <p><mark>7/11/25</mark> new blog post</p>
+                <p><mark>10/13/25</mark> halloween homepage!</p>
+            </details>
+
+            <p style="visibility: hidden; height:0px; width:0px" id="zed"><span
+                    style="margin-bottom:-5px" class="material-icons">pause</span></p>
+            <p style="visibility: hidden; height:0px; width:0px" id="ah"><span
+                    style="margin-bottom:-5px" class="material-icons">play_arrow</span></p>
+
+        </article><!--past end-->
+
+        <article role="tabpanel" id="tab-B" hidden="true"> <!--to-do start-->
+            <ul>
+            <li>finish the dog page (it will happen i swear)</li>
+            <li>dev guide</li>
+            <li>animal crossing page</li>
+            <li>doom pg</li>
+        </ul>
+        </article><!--to-do end-->
+
+
+
+    </section>
+
+  </div>
+</div>
+
+<style>
+    details{
+        font-size: .9rem!important;
+    }
+
+    summary{
+        font-size: 1rem;
+    }
+
+    article{
+        overflow: auto;
+        max-height: 100px;
+    }
+    #tab-C p{
+            margin:0;
+            margin-top: 10px;
+        
+    }
+    ul{
+        margin:0;
+        padding-left:10px;
+    }
+    .window-body{
+    padding: 10px!important;
+    padding-bottom: 0px!important;
+}
+</style>

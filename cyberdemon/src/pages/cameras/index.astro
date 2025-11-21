@@ -1,0 +1,157 @@
+---
+import LayoutSidebar from "../../layouts/LayoutSidebar.astro";
+import '../../styles/cameras.css';
+---
+<script src="/scripts/cameraVid.js" is:inline></script>
+
+
+<LayoutSidebar pageName="cameras" headerImg="/images/graphics/nintendogBone.png" headerWidth="6vw">
+    <div class="flex">
+        <div class="flexChild child-equal">
+            <h2>the collection</h2>
+                <div class="cameraBox border radius-10">
+                    <div class="border radius-5 blankCameraBox">
+                        <div class="camera">
+                            <span><img src="/images/cameras/trimlite.png"></span>
+                            <p class="name">Trimlite Instamatic 18</p>
+                            <p>
+                                <mark>make:</mark> kodak <br>
+                                <mark>year:</mark> 1975 <br>
+                                <mark>flim:</mark> 110
+                            </p>
+                        </div>
+
+                        <div class="camera">
+                            <span><img src="/images/cameras/cx.png"></span>
+                            <p class="name">Easyshare CX7430</p>
+                            <p>
+                                <mark>make:</mark> kodak <br>
+                                <mark>year:</mark> 2004<br>
+                                <mark>flim:</mark> digital
+                            </p>
+                        </div>
+
+                        <div class="camera">
+                            <span><img src="/images/cameras/everflash.png"></span>
+                            <p class="name"> Everflash 20</p>
+                            <p>
+                                <mark>make:</mark> keystone<br>
+                                <mark>year:</mark> 1978<br>
+                                <mark>flim:</mark> 126
+                            </p>
+                        </div>
+
+                        <div class="camera">
+                            <span><img src="/images/cameras/onestep.png"></span>
+                            <p class="name">TimeZero OneStep</p>
+                            <p>
+                                <mark>make:</mark> polaroid<br>
+                                <mark>year:</mark> 1981<br>
+                                <mark>flim:</mark> 600
+                            </p>
+                        </div>
+
+                        <div class="camera">
+                            <span><img src="/images/cameras/elph.png"></span>
+                            <p class="name"> Elph Z3</p>
+                            <p>
+                                <mark>make:</mark> canon<br>
+                                <mark>year:</mark> 2002<br>
+                                <mark>flim:</mark> APS
+                            </p>
+                        </div>
+
+                        <div class="camera">
+                            <span><img src="/images/cameras/lomography.png"></span>
+                            <p class="name"> Simple Use</p>
+                            <p>
+                                <mark>make:</mark> lomography<br>
+                                <mark>year:</mark> 2002<br>
+                                <mark>flim:</mark> 35mm<br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+        <div class="flexChild child-equal">
+            <div class="window violet glass active" style="background-color: #69a0ff">
+                <div class="title-bar">
+                    <div class="title-bar-text">WELCOME</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body font-base welcome">
+                    <p>
+                        welcome to my small camera collection!! i am an avid lover of analogue film
+                        and cool looking old point and shoot cameras
+                        <img class="pixel" src="https://graphic.neocities.org/tumblr_ln1t8epBMD1qg9aa7.png"> dont forget to check out my <a href="/cameras/gallery">gallery!</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flexChild child-equal">
+                    <h3>resources</h3>
+                    <div class="resources">
+                        <h4>shop</h4>
+                        <div class="shop border radius-5 font-sm">
+                            <p><a href="https://www.amazon.com/Leader-Retriever-PICKER-Cassettes-Extractor/dp/B00DN1080U/"
+                                    target="_blank"> 35mm film leader</a></p>
+                            <p><a href="https://shop.lomography.com/us/film/35-mm-film/" target="_blank">
+                                    35mm film</a></p>
+                            <p><a href="https://www.amazon.com/Kodak-Ultramax-Color-Print-135-36/dp/B004R4N2B4/"
+                                    target="_blank"> 35mm film (cheaper, bulk)</a></p>
+                            <p><a href="https://shop.lomography.com/us/film/110-film/" target="_blank"> 110
+                                    film</a></p>
+                            <p><a href="https://www.amazon.com/Kodak-Advantix-Speed-Exposure-APS/dp/B00004SPA3/"
+                                    target="_blank"> aps film</a></p>
+                            <p><a href="https://www.ebay.com/sch/167943/i.html?_from=R40&_nkw=126+film+cartridge/"
+                                    target="_blank"> expired 126 film</a></p>
+                            <p><a href="https://www.amazon.com/Kastar-Battery-Charger-Olympus-EasyShare/dp/B01LB3V0TO/"
+                                    target="_blank"> kastar batteries + charger</a></p>
+                        </div>
+                        <h4>links</h4>
+                        <div class="shop border radius-5 font-sm">
+                            <p><a href="https://thedarkroom.com/film-index/" target="_blank">
+                                thedarkroom</a> film info</p>
+                        <p><a href="http://camera-wiki.org/wiki/Main_Page/" target="_blank"> camera
+                                wiki</a> every camera ever</p>
+                        <p><a href="https://www.lomography.com/school" target="_blank"> lomography school
+                            </a>guides and resources</p>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+                <div class="flexChild child-equal">
+                    <h3>camera vids</h3>
+                    <iframe id="vidPlayer" width="180" height="101"
+                    src="https://www.youtube.com/embed/AEm-2giH_zw?si=JtIENvklFtGPa76P"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-/images/cameras; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                    <div class="cameraVid border radius-5">
+                        <button onclick="myFunction1()"> Flash photography used to be pretty wild -
+                            Technology Connections</button><br>
+                        <button onclick="myFunction2()"> Shoot 35mm Film in 126 Instamatic Camera -
+                            FilmPhotographyProject</button><br>
+                        <button onclick="myFunction3()"> How Kodak invented the “snapshot” -
+                            Vox</button><br>
+                    </div>
+                        
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</LayoutSidebar>
+

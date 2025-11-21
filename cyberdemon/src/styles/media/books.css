@@ -1,0 +1,120 @@
+
+body{
+  background-image: none;
+  background-color: white;
+  overflow:hidden;
+}
+
+h1{
+  margin-bottom: -75px;
+  z-index: 2!important;
+  position: relative;
+}
+
+.titleImage{
+  position: relative;
+  z-index: 2;
+}
+
+.container{
+  margin-top: 60px;
+  background-image: url(../images/backgrounds/field5.png);
+  background-size: cover;
+  background-position: bottom;
+  padding:20px;
+  position: relative;
+}
+
+.shelf{
+  background-color: #94ceee;
+  border:5px solid #06c;
+}
+
+.row{
+  width: 100%;
+  padding:0px 20px;
+  padding-top:35px;
+  white-space: nowrap;
+  overflow-x: auto;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  img{
+    height:170px;
+    transition-duration:0.4s;
+    -webkit-transition-duration:0.4s;
+    -o-transition-duration:0.4s;
+    margin:5px;
+    margin-bottom:-5px;
+    &:hover{
+      transform: translate(0px, -10px);
+      transition-duration:0.4s;
+      -webkit-transition-duration:0.4s;
+      -o-transition-duration:0.4s;
+      
+    }
+  }
+  &:not(:last-of-type){
+    border-bottom:5px solid #06c;
+  }
+}
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+    background-color: #fff;
+  color: #06c;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  bottom: 100%;
+  left: 50%;
+  font-size:17px;
+  font-family:basiic;
+  filter: drop-shadow(-1px 0px 0 black) drop-shadow(0px 1px 0 black) drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#glassesDog{
+  right:-15px;
+  margin-top: -35px;
+  width: 230px;
+  position: absolute;
+  img{
+    width: 250px;
+    height:auto;
+    top:-160px;
+    left:120px;
+    position: absolute; 
+    transform: scaleX(-1);
+  }
+}
+
+[role=tooltip]{
+  padding-left: 18px!important;
+}
+

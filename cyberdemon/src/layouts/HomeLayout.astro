@@ -1,0 +1,56 @@
+---
+import '../styles/style.css';
+import Navigate from '../components/Navigate.astro';
+import NavigateMobile from '../components/NavigateMobile.astro';
+import Updates from '../components/Updates.astro';
+
+const { pageName } = Astro.props;
+---
+<script src="/scripts/click.js" is:inline></script>
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageName}</title>
+		<link rel="stylesheet" href="https://unpkg.com/7.css">
+
+		<script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script is:inline src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+	  
+		<script is:inline>
+		  (function($){
+			$(document).ready(function(){
+			  $("[title], a[title], img[title]").style_my_tooltips({
+				tip_follows_cursor: true,
+				tip_delay_time: 90,
+				tip_fade_speed: 600,
+				attribute: "title"
+			  });
+			});
+		  })(jQuery);
+		</script>
+	  
+
+	</head>
+	<body>
+		<NavigateMobile />
+	<div id="main">
+		<h1 id="homeTitle">{pageName} <img src="/images/graphics/wiidog.png" alt="a png of a nintendo wii dog catching a frisbee"></h1>
+
+		<div class="flex">
+            <div class="flexChild child-small">
+			
+				<Navigate />
+                <Updates />
+			</div>
+			<div class="flexChild child-equal mainBox">
+				<slot />
+			</div>
+		</div>
+	</body>
+</html>
+
