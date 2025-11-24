@@ -188,6 +188,7 @@ font-size: 6rem;
 /*webrings*/
 #webrings{
   height:300px;
+  max-width: 340px;
   padding:10px;
   overflow:auto;
   margin-top:-15px;
