@@ -135,7 +135,7 @@ body {
   font-size: var(--font-base);
   color: black;
   font-family: basiic;
-  background-image: url("../images/backgrounds/bg.png");
+  background-image: url("/./images/backgrounds/bg.png");
   background-repeat: repeat;
   background-color: white;
 }
@@ -186,7 +186,7 @@ mark {
 .mainBox {
   border-width: 7px;
   border-style: solid;
-  border-image: url("../images/border.png") 7 fill round;
+  border-image: url("/./images/border.png") 7 fill round;
   padding: 10px!important;
 }
 

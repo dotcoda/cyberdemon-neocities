@@ -201,6 +201,9 @@ font-size: 6rem;
   img{
     width: auto;
   }
+  #xenicRing #xenicFlag {
+    background: url('https://static.wikia.nocookie.net/gender/images/2/23/Pupgender.webp/revision/latest?cb=20230125050714')!important;
+  }
 }
 
 #xenicRing {

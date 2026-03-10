@@ -51,12 +51,14 @@
 
 .welcome{
     font-family: basiic;
-    padding: 10px!important;
     text-align: center;
     img{
         height: var(--font-base);
         width: auto;
         margin: 0;
+    }
+    p{
+        padding: 10px!important;
     }
 }
 
