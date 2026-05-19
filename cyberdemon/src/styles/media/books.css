@@ -18,7 +18,7 @@ h1{
 
 .container{
   margin-top: 60px;
-  background-image: url(../images/backgrounds/field5.png);
+  background-image: url(/./images/backgrounds/field5.png);
   background-size: cover;
   background-position: bottom;
   padding:20px;
