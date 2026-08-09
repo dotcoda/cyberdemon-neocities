@@ -22,10 +22,10 @@ const { pathname } = Astro.url;
   </ul>
   
   <div class="nav">
-    <a class="home" href="/home"><img src="../../images/graphics/1020.ico" aria-hidden="true" alt=""> Return Home</a>
+    <a class="home" href="/home"><img src="../../images/icons/1020.ico" aria-hidden="true" alt=""> Return Home</a>
 
       <details open={pathname.startsWith("/about") || pathname.startsWith("/love")} style="margin-top: 10px;">
-        <summary class="personal"><img src="../../images/graphics/81.ico" aria-hidden="true" alt=""> Personal</summary>
+        <summary class="personal"><img src="../../images/icons/81.ico" aria-hidden="true" alt=""> Personal</summary>
         <ul class="tree-view has-connector">
           <li><a href="/about">About</a></li>
           <ul>
@@ -36,7 +36,7 @@ const { pathname } = Astro.url;
       </details>
 
       <details open={pathname.startsWith("/resources") || pathname.startsWith("/info") || pathname.startsWith("/layouts")}>
-      <summary><img src="../../images/graphics/25.ico" aria-hidden="true" alt=""> Sitely</summary>
+      <summary><img src="../../images/icons/25.ico" aria-hidden="true" alt=""> Sitely</summary>
       <ul class="tree-view">
         <li><a href=/resources>Resources</a></li>
         <li><a href="/info">Site info/Credits</a></li>
@@ -45,7 +45,7 @@ const { pathname } = Astro.url;
     </details>
 
     <details open={pathname.startsWith("/blog") || pathname.startsWith("/microblog") || pathname.startsWith("/articles")}>
-      <summary><img src="../../images/graphics/102.ico" aria-hidden="true" alt=""> Writing</summary>
+      <summary><img src="../../images/icons/102.ico" aria-hidden="true" alt=""> Writing</summary>
       <ul class="tree-view">
         <li><a href="/blog">Blog</a></li>
         <li><a href="/microblog">Microblog</a></li>
@@ -53,7 +53,7 @@ const { pathname } = Astro.url;
     </details>
 
     <details open={pathname.startsWith("/media") || pathname.startsWith("/cameras")}>
-        <summary><img src="../../images/graphics/23.ico" aria-hidden="true" alt=""> Creative</summary>
+        <summary><img src="../../images/icons/23.ico" aria-hidden="true" alt=""> Creative</summary>
   
         <ul class="tree-view has-connector">
         <li><a href="/media">Media</a></li>

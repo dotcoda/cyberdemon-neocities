@@ -2,6 +2,10 @@
     position: relative;
 }
 
+#kitty{
+    border-radius: 5px;
+}
+
 .about{
       height:calc(100% - 7px);
       padding:0px 5px;
@@ -48,6 +52,11 @@
 
 .tab{
     margin-bottom: 10px;
+}
+
+.tab button:not(:last-child){
+    margin-right:.4rem;
+
 }
 
 #floatie{
@@ -98,4 +107,21 @@
       transform: translateX(-100%);
     }
 }
-  
+
+@media (max-width: 800px) {
+#kitty{
+    width: 40vw;
+    margin-bottom: -1rem !important;
+}
+.about {
+    padding:.8rem .2em;
+}
+
+#horizontal{
+    width: auto;
+}
+
+.tab button{
+    margin-bottom: 5px;
+}
+}

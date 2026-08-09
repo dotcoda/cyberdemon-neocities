@@ -38,17 +38,18 @@ const { pageName } = Astro.props;
 	</head>
 	<body>
 		<NavigateMobile />
-	<div id="main">
-		<h1 id="homeTitle">{pageName} <img src="/images/graphics/wiidog.png" alt="a png of a nintendo wii dog catching a frisbee"></h1>
+		<div id="main">
+			<h1 id="homeTitle">{pageName} <img src="/images/graphics/wiidog.png" alt="a png of a nintendo wii dog catching a frisbee"></h1>
 
-		<div class="flex">
-            <div class="flexChild child-small">
-			
-				<Navigate />
-                <Updates />
-			</div>
-			<div class="flexChild child-equal mainBox">
-				<slot />
+			<div class="flex">
+				<div class="flexChild child-small">
+				
+					<Navigate />
+					<Updates />
+				</div>
+				<div class="flexChild child-equal mainBox">
+					<slot />
+				</div>
 			</div>
 		</div>
 	</body>
