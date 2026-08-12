@@ -25,6 +25,9 @@ font-size: 6rem;
 
  #welcome p > img {
     margin-inline: 0.2em!important;
+    &:first-child{
+       margin-inline: 0em !important;
+    }
   }
   
   #header {

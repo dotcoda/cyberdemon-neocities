@@ -1,18 +1,18 @@
 const playlist = [
 	{
-		src: "https://cyberdemon.nekoweb.org/audio/retro tv.mp3",
+		src: "/audio/retro tv.mp3",
 		title: "Retro TV - Animal Crossing"
 	},
 	{
-		src: "https://cyberdemon.nekoweb.org/audio/The DOG Island OST - 2. Puroro Town (HQ).mp3",
+		src: "/audio/PuroroTown.mp3",
 		title: "The DOG Island OST - Puroro Town"
 	},
 	{
-		src: "https://cyberdemon.nekoweb.org/audio/Animal Crossing- Wild World - Title Screen .mp3",
+		src: "/audio/ACWW_TitleScreen .mp3",
 		title: "Animal Crossing: Wild World - Title Screen"
 	},
 	{
-		src: "https://cyberdemon.nekoweb.org/audio/Launcher - Wii Sports + Wii Sports Resort.mp3",
+		src: "/audio/Launcher_WiiSports.mp3",
 		title: "Launcher - Wii Sports + Wii Sports Resort"
 	},
 	{
@@ -26,6 +26,7 @@ let currentTrack = 0;
 const audio = document.getElementById("myAudio");
 const icon = document.getElementById("icon");
 const nowPlaying = document.getElementById("nowPlaying");
+const scrollingText = nowPlaying.querySelector(".scrolling-text");
 
 function toggleAudio() {
 	if (audio.paused) {
@@ -40,7 +41,7 @@ function toggleAudio() {
 function nextTrack() {
 	currentTrack = (currentTrack + 1) % playlist.length;
 	audio.src = playlist[currentTrack].src;
-	nowPlaying.textContent = "Now Playing: " + playlist[currentTrack].title;
+	scrollingText.textContent = "Now Playing: " + playlist[currentTrack].title;
 	audio.play();
 	icon.textContent = "pause";
 }

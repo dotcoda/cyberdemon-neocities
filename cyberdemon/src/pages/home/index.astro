@@ -2,7 +2,6 @@
 import HomeLayout from "../../layouts/HomeLayout.astro";
 import '../../styles/home.css';
 ---
-<script src="/scripts/click.js" is:inline></script>
 
 <script src="/scripts/wobble.js" is:inline></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -19,7 +18,7 @@ import '../../styles/home.css';
             <p class="radius-10 border bg-white">
                 <img src="../images/pixels/f1001751-49727b05.gif" aria-hidden="true" alt="">hello
                 and welcome to <span id="wobble">cyberdemon.neocities.org</span> v5!
-                <img src="images/pixels/f429989.gif" alt="" aria-hidden="true">
+                <img src="../images/pixels/f429989.gif" alt="" aria-hidden="true">
                 my name is <a href="/about" onmouseover="mouseoversound.playclip()"
                     onclick="clicksound.playclip()">coda</a>
                 <img src="../images/pixels/f70603.gif"aria-hidden="true" alt=""> 
@@ -73,7 +72,7 @@ import '../../styles/home.css';
 
                 <div style="display: flex; align-items: center; gap: 10px;">
                     
-                    <audio id="myAudio" src="https://cyberdemon.nekoweb.org/audio/retro tv.mp3" type="audio"></audio>
+                    <audio id="myAudio" src="/audio/retro tv.mp3" type="audio"></audio>
                 
                     <span style="cursor:pointer; color:#3399ff; font-size:12px;" id="music" onclick="toggleAudio()">
                         <span class="material-icons" id="icon">play_arrow</span>
@@ -110,12 +109,12 @@ import '../../styles/home.css';
         <div id="link" class="border bg-white radius-5">
             <center> <img class="w-auto" src="https://cyberdemon.neocities.org/button.png"
                     alt="the button of cyberdemon"></center>
-            <textarea id="myInput"
+            <textarea
                 style="height:30px; width:93%; margin-top:5px; margin-left:5px;"
-                id="myInput">&lta href="https://cyberdemon.neocities.org/"&gt&ltimg src="https://cyberdemon.neocities.org/button.png" alt="the button of cyberdemon"&gt&lt/a&gt</textarea>
+                id="myInput">&lt;img src="https://cyberdemon.neocities.org/button.png" alt="the button of cyberdemon"&gt;</textarea>
             <button style="float:left; margin-left:5px; margin-right:5px"
                 onclick="copy()">Copy</button>
-            <script>
+            <script is:inline>
                 function copy() {
                     // Get the text field
                     var copyText = document.getElementById("myInput");
@@ -210,7 +209,6 @@ import '../../styles/home.css';
                 <a href="https://magooka.neocities.org/"><img src="https://magooka.neocities.org/magookabutton.gif" width="88" height="31" alt="magooka"></a>
                 <!--strawbebby's button 88x31--><a href='https://strawbebby228.neocities.org/' target='_blank'><img src='https://strawbebby228.neocities.org/arts/UI/ButtonPink.gif' alt="strawbebby228"></a>
                 <a href="https://alongcomesmary.neocities.org"><img src="https://i.postimg.cc/zBG8XZx0/alongcomes2.gif" alt="alongcomesmary"></a>
-                <a href="https://kidwiththechemicalz.neocities.org/" target="_blank"><img src="https://kidwiththechemicalz.neocities.org/88x31.gif" alt="kidwiththechemicalz"> </a>
                 <a href="https://felinewasteland.neocities.org/"><img src="https://felinewasteland.neocities.org/img/button_salem.gif" alt="felinewasteland"></a>
                 <a href="https://thingamabob.neocities.org/"><img src="https://thingamabob.neocities.org/Homepageimages/button.png" width="88px"  alt="thingamabob"></a>  
                 <a href="https://circat.neocities.org/"><img src="https://circat.neocities.org/button.png" alt="circat"></a>
@@ -233,13 +231,12 @@ import '../../styles/home.css';
                 <a href="https://hmln.neocities.org/" target="_blank"><img src="https://hmln.neocities.org/button.png" alt="hmln"></a>
                 <a href="https://fuchi.neocities.org/"><img src="https://fuchi.neocities.org/fuchibutton.jpeg" alt="fuchi"></a> 
                 <a href="https://fwing.pet"><img src="https://i.imgur.com/I6ILNQ1.gif" alt="fwing.pet"></a>
-                <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/ricedotplace.png" alt="rice.place"></a>
                 <a href="https://darkosparko.nekoweb.org" target="_blank"><img src="https://darkosparko.nekoweb.org/rocket-button.gif" alt="Rocket into the Spark-Web!"></a>
                 <a href="https://alheli.nekoweb.org/"><img src="https://alheli.nekoweb.org/assets/images/index/alheli-button.png" alt="alheli"></a>
                 <a href="https://layercake.nekoweb.org/"><img style="image-rendering: pixelated" src="https://layercake.nekoweb.org/links/images/layercakebutton.gif" alt="an 88 x 31 button, the background is a cake and it has the text 'layercake' upon it"></a>
                 <a href="https://toasty.place/" target="_blank"><img src="https://toastofthesewn.nekoweb.org/images/buttons/sitebutton2.png" alt="toasty.place" ></a>
-                <a href="https://altalenae.neocities.org/" target="_blank"><img src="https://files.catbox.moe/bu27p2.png" alt=altalenae"></a>
-                <a href="https://dreamvalley.neocities.org/"> <img src="https://dreamvalley.neocities.org/button%202.png" alt="dreamvalley"></a> 
+                <a href="https://altalenae.neocities.org/" target="_blank"><img src="https://file.garden/agznwA9BWhGmvonh/buttons/altalenae.png" alt="altalenae"></a>
+                <a href="https://dreamvalley.neocities.org/"> <img src="https://file.garden/agznwA9BWhGmvonh/buttons/dreamvalley.gif" alt="dreamvalley"></a> 
                 
 
 			</span>

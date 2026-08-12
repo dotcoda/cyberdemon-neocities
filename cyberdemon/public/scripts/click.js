@@ -30,8 +30,8 @@
   }
 
   // init sounds
-  var mouseoversound = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select.mp3")
-  var clicksound     = createsoundbite("https://cyberdemon.nekoweb.org/audio/animal-jam-select2.mp3")
+  var mouseoversound = createsoundbite("/audio/animal-jam-select.mp3")
+  var clicksound     = createsoundbite("/audio/animal-jam-select2.mp3")
 
   // attach to every link
   document.addEventListener("DOMContentLoaded", function() {
