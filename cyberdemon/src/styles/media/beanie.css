@@ -2,7 +2,7 @@ body {
   background: LavenderBlush;
   font-size: 20px;
   text-align: center;
-  background-image: url(../images/backgrounds/clouds.png);
+  background-image: url(/./images/backgrounds/clouds.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
