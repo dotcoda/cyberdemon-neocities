@@ -24,8 +24,11 @@
     flex:.5;
     box-sizing: border-box;
    
+    p:first-of-type{
+        height: 2rem;
+    }
     p{
-        text-align: left;
+        text-align:left;
     }
     span{
         height: 100px;
